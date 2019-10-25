@@ -65,6 +65,14 @@ strong {
       padding: 0 20px;
       box-sizing: border-box; } }
 
+.order {
+  background-color: #2857B4;
+  width: 254px;
+  height: 56px;
+  border: none;
+  color: white;
+  font-size: 24px; }
+
 .steps {
   display: -webkit-box;
   display: flex;
@@ -155,13 +163,20 @@ strong {
         width: 55%;
         font-size: 24px;
         line-height: 29px; }
-      .advantages .content1 .slider .slide .sliderTxt button {
-        background-color: #2857B4;
-        width: 254px;
-        height: 56px;
-        border: none;
-        color: white;
-        font-size: 24px; }
+  .advantages .content1 .form_block {
+    background-color: #fff;
+    border-radius: 25px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    justify-content: space-around;
+    -webkit-box-align: center;
+            align-items: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    text-align: center; }
 
 .contacts {
   display: -webkit-box;
