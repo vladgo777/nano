@@ -1,0 +1,19 @@
+@mixin l-desk
+    @media screen and (min-width: 1368px) and (max-width: 1828px)
+        @content
+
+@mixin m-desk
+    @media screen and (min-width: 1281px) and (max-width: 1550px)
+        @content
+
+@mixin sm-desk
+    @media screen and (min-width: 1025px) and (max-width: 1280px)
+        @content
+
+@mixin tablet
+    @media screen and (min-width: 641px) and (max-width: 1024px)
+        @content
+
+@mixin mobile
+    @media screen and (min-width: 300px) and (max-width: 1024px)
+        @content

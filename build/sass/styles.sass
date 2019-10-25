@@ -1,0 +1,135 @@
+@import 'mixins';
+$padding-top: 40px
+
+*
+	margin: 0
+	padding: 0
+
+html
+	overflow-x: hidden
+
+body
+	font-family: 'Montserrat', sans-serif
+	background: none
+
+header, footer
+	box-sizing: border-box
+	margin: auto !important
+	z-index: 10
+	
+
+section
+	width: 100%
+	box-sizing: border-box
+	z-index: 10
+	position: relative
+	background-color: #fff !important
+	overflow: hidden
+
+a
+	text-decoration: none
+	color: inherit
+
+ul, li
+	list-style: none
+
+strong
+	font-weight: 700
+
+.two_half_container
+	display: flex
+	flex-direction: row
+	flex-wrap: nowrap
+	justify-content: space-between
+	@include mobile
+		flex-direction: column
+
+.content1
+	position: relative
+	max-width: 1704px
+	width: 100%
+	height: auto
+	margin: auto
+	@include l-desk
+		max-width: 1300px
+	@include m-desk
+		max-width: 1200px
+	@include mobile
+		padding: 0 20px
+		box-sizing: border-box
+
+.steps
+	display: flex
+	flex-direction: column
+	flex-wrap: nowrap
+	justify-content: space-between
+	padding: $padding-top 0 0 0
+	h2
+		font-size: 30px
+		line-height: 36px
+		color: #000000
+		text-align: center
+	.steps_block
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-wrap: wrap
+		margin: 55px 0
+		width: 100%
+		img
+			width: 900px
+		.step-el
+			width: 18%
+			text-align: center
+			padding: 15px 0 0 0
+			align-items: center
+			&:nth-child(6), &:nth-child(7), &:nth-child(8), &:nth-child(9), &:nth-child(10)
+				padding: 50px 0 0 0  
+			p
+				margin-top: 20px
+				font-size: 18px
+				line-height: 28px	
+			img
+				width: 18%
+		.step-el1
+			width: 33%
+			&:nth-child(4), &:nth-child(5), &:nth-child(6)
+				padding: $padding-top 0 0 0 
+
+.contacts
+	display: flex
+	flex-direction: column
+	flex-wrap: nowrap
+	justify-content: space-between
+	text-align: center	
+	width: 50%
+	margin: 0 auto
+	padding: $padding-top 0 154px 0
+	h1
+		color: #2857B4
+		font-size: 64px
+	.mainInfo
+		width: 100%
+		line-height: 46px
+		display: flex
+		align-items: center
+		flex-direction: row
+		justify-content: space-around	
+		span
+			display: flex
+			font-size: 25px	
+			flex-direction: row
+			// h2
+			// 	font-size: 27px	
+
+
+
+
+    
+    
+    
+    
+		
+
+
+
