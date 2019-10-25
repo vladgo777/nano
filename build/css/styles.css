@@ -111,6 +111,58 @@ strong {
       .steps .steps_block .step-el1:nth-child(4), .steps .steps_block .step-el1:nth-child(5), .steps .steps_block .step-el1:nth-child(6) {
         padding: 40px 0 0 0; }
 
+.advantages .content1 {
+  max-width: 1920px;
+  width: 100%;
+  height: auto;
+  margin: auto; }
+  @media screen and (min-width: 1368px) and (max-width: 1828px) {
+    .advantages .content1 {
+      max-width: 1750px; } }
+  @media screen and (min-width: 1281px) and (max-width: 1550px) {
+    .advantages .content1 {
+      max-width: 1550px; } }
+  @media screen and (min-width: 300px) and (max-width: 1024px) {
+    .advantages .content1 {
+      padding: 0 20px;
+      box-sizing: border-box; } }
+  .advantages .content1 .slider .slide {
+    position: relative; }
+    .advantages .content1 .slider .slide .sliderTxt {
+      width: 90%;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column;
+      text-align: center;
+      -webkit-box-align: center;
+              align-items: center;
+      max-width: 1604px;
+      height: auto;
+      margin: 0;
+      position: absolute;
+      color: white;
+      top: 25%;
+      left: 8%; }
+      .advantages .content1 .slider .slide .sliderTxt .txtTop {
+        font-size: 14px; }
+      .advantages .content1 .slider .slide .sliderTxt h2 {
+        font-size: 82px;
+        padding: 0; }
+      .advantages .content1 .slider .slide .sliderTxt .txtLow {
+        padding: 40px;
+        width: 55%;
+        font-size: 24px;
+        line-height: 29px; }
+      .advantages .content1 .slider .slide .sliderTxt button {
+        background-color: #2857B4;
+        width: 254px;
+        height: 56px;
+        border: none;
+        color: white;
+        font-size: 24px; }
+
 .contacts {
   display: -webkit-box;
   display: flex;

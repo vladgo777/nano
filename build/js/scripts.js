@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('.advantages').slick({
+  $('.slider').slick({
   	dots: true,
   	autoplay: true,
 	slidesToShow: 1,
