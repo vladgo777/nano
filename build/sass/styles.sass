@@ -1,6 +1,6 @@
 @import 'mixins';
 $padding-top: 40px
-
+$darkBlue: #08142C
 *
 	margin: 0
 	padding: 0
@@ -89,7 +89,41 @@ strong
 			color: #D7D7D7
 			font-size: 24.0541px
 			margin: 0
-
+header
+	width: 100%
+	background-color: $darkBlue
+	position: relative
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	align-items: center
+	flex-wrap: nowrap
+	max-width: 1920px
+	width: 100%
+	height: 72px
+	margin: auto
+	.logo
+		width: 15%
+		margin: 0 0 0 20px
+	nav
+		position: relative
+		max-width: 512px
+		width: 90%
+		display: block
+		z-index: 15
+		@include mobile
+			display: none
+		.menu li
+			display: inline-block
+			font-size: 19px
+			line-height: 24px
+			margin: 0 28px 0 0
+			color: #fff
+			height: 35px
+			cursor: pointer
+			&:hover, &:after
+				box-sizing: border-box
+				border-bottom: 4px solid #00adef
 .steps
 	display: flex
 	flex-direction: column
@@ -206,8 +240,9 @@ strong
 				font-size: 30px	
 
 footer
-	background-color: #08142C
+	background-color: $darkBlue
 	padding: 28px 0 !important
+	max-width: 1920px
 	.four_half_container
 		display: flex
 		flex-direction: row
