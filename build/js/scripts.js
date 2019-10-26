@@ -5,8 +5,7 @@ $(document).ready(function(){
   	// autoplay: true,
 	slidesToShow: 1,
 	slidesToScroll: 1,
-	// infinite: true,
-	// speed: 2000
+	
   });
 //order popup
 	$('.order').magnificPopup({

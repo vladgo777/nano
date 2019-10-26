@@ -1,6 +1,7 @@
 @import 'mixins';
 $padding-top: 60px
 $darkBlue: #08142C
+$lightBlue: #2857B4
 *
 	margin: 0
 	padding: 0
@@ -67,28 +68,6 @@ strong
 	color: white
 	font-size: 24px
 
-.form_block
-	display: flex
-	flex-direction: column
-	justify-content: space-between
-	align-items: center
-	fieldset
-		border: 1.33634px solid #BEBEBE
-		height: 72.52px
-		legend
-			margin-left: 50px
-			color:  #333333
-			font-weight: 550
-			font-size: 14.6997px
-		.styleInput
-			font-family: Helvetica
-			width: 90%
-			height: 100%
-			outline: none
-			border: none
-			color: #D7D7D7
-			font-size: 24.0541px
-			margin: 0
 header
 	width: 100%
 	background-color: $darkBlue
@@ -124,25 +103,23 @@ header
 .intro
 	.content1
 		width: 82%
-		.imgIntro
+		.imgIntro	
+			width: 100% 	
+			max-width: 1390px
+			height: auto
+			margin: auto
+			text-align: center
+			color: white 
+			background: url(../img/export.png)  no-repeat
 			img
-				max-width: 100%
-			  	height: auto
-			  	position: relative
-			.mainTag			
-				width: 100% 	
-				max-width: 1390px
-				height: auto
-				margin: auto
-				text-align: center
-				position: absolute
-				color: white 
-				h1
-					font-size: 81.7955px
-					line-height: 98px
-				h2
-					font-size: 36.7083px
-					font-weight: 100	
+				padding-top: $padding-top
+			h1
+				font-size: 81.7955px
+				line-height: 98px
+			h2
+				font-size: 36.7083px
+				font-weight: 100
+				padding-bottom: 80px	
 		.txtIntro
 			padding: 100px 0 0 0
 			display: flex
@@ -201,23 +178,12 @@ header
 				padding: $padding-top 0 0 0 
 
 .advantages
-	padding: $padding-top 0 0 0
+	padding: $padding-top 0 0 0		
 	.content1
 		max-width: 1920px
 		height: auto
 		margin: auto
-		.slider
-			.form_block
-				fieldset
-					width: 80%
-					legend
-						color: black
-						font-size: 14.6997px
-					.styleInput
-						border: none
-						color: #D7D7D7
-						font-size: 24.0541px
-						margin: 0
+		.slider			
 			.slide
 				position: relative
 				img
@@ -244,12 +210,90 @@ header
 						padding: $padding-top
 						width: 55%
 						font-size: 24px
-						line-height: 29px
-	
+						line-height: 29px		
+.form_block
+	align-items: center
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	fieldset
+		border: 1.33634px solid #BEBEBE
+		height: 72.52px
+		margin: 20px 0 0 0
+		width: 90%
+		button
+			margin: 82px 0 0 0
+		legend
+			color: black
+			font-size: 14.6997px
+			margin-left: 50px
+			font-weight: 550
+			font-size: 14.6997px
+		.styleInput
+			border: none						
+			width: 90%
+			height: 100%
+			font-family: "Helvetica"
+			outline: none
+			color: #D7D7D7
+			font-size: 24.0541px
+			margin: 0
+	button
+			margin: 40px 0 0 0
+
+.price
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-between
+	width: 100%
+	h2
+		font-size: 48px
+		color: $lightBlue
+		padding: 97px 0 51px 0
+	.cont
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		.form_block
+			width: 50%
+		img
+			max-width: 700px
+			height: 80%
+.form_block1
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	width: 47%
+	max-width: 700px
+	fieldset
+		border: 1.33634px solid #BEBEBE
+		height: 81.52px
+		margin: 0 0 35px 0
+		text-align: center	
+		legend
+			color: black
+			font-size: 14.6997px
+			margin-left: 50px
+			font-weight: 550
+			font-size: 14.6997px
+		.styleInput
+			border: none					
+			width: 90%
+			height: 100%
+			font-family: "Helvetica"
+			outline: none
+			color: #D7D7D7
+			font-size: 24.0541px
+			margin: 0					
+	button
+		margin: 40px 0 0 0
+		width: 60%
+
+
 .contacts
 	display: flex
 	flex-direction: column
-	flex-wrap: wrap
 	justify-content: space-between
 	width: 50% 	
 	max-width: 1390px
@@ -257,21 +301,22 @@ header
 	margin: auto
 	text-align: center
 	padding: $padding-top 0 154px 0
-	h1
-		color: #2857B4
+	h2
+		color: $lightBlue
 		font-size: 64px
 	.mainInfo
 		width: 100%
 		line-height: 46px
 		display: flex
-		align-items: center
+		align-items: center		
+		flex-wrap: wrap
 		flex-direction: row
 		justify-content: space-around	
 		span
 			display: flex
 			font-size: 28px	
 			flex-direction: row
-			h2
+			h3
 				font-size: 30px	
 
 footer
@@ -304,13 +349,3 @@ footer
 		transition: .4s
 		&:hover
 			color: #999999
-		
-
-    
-    
-    
-    
-		
-
-
-
