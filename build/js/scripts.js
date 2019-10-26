@@ -1,4 +1,5 @@
 $(document).ready(function(){
+//slider slick
   $('.slider').slick({
   	dots: true,
   	autoplay: true,
@@ -7,4 +8,18 @@ $(document).ready(function(){
 	infinite: true,
 	speed: 2000
   });
+//order popup
+	$('.order').magnificPopup({
+		items: {
+          src: '#text-popup'
+        },
+        type:'inline',
+	  	midClick: true
+    });
+
+    $('.selector').click(function(event) {
+	    var value = $(this).attr('id');
+	    $('.input-selector').val(value);
+	});
+
 });

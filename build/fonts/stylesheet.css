@@ -2,7 +2,7 @@
     font-family: 'Stolzl';
     src: url('Stolzl-Regular.woff2') format('woff2'),
         url('Stolzl-Regular.woff') format('woff');
-    font-weight: normal;
+    font-weight: 600;
     font-style: normal;
 }
 

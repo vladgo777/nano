@@ -50,7 +50,7 @@
 						<span class="txtTop">Наши услуги</span>
 			 			<h2 class="infoTxt">Авиа перевзоки</h2>
 			 			<span class = "txtLow">Мы работаем напрямую с авиакомпаниями, поэтому гарантируем грамотные логистические услуги и адекватные цены.</span>
-			 			<button class="order">Заказать</button>
+			 			<button href="#order" id ="1" class="order selector">Заказать</button>
 			 		</div> 	
 				</div>
 				<div class="slide">
@@ -59,7 +59,7 @@
 						<span class="txtTop">Наши услуги</span>
 			 			<h2 class="infoTxt">Морские перевзоки</h2>
 			 			<span class = "txtLow">Применение налаженных каналов поставок дает возможность организовать доставку «от двери до двери» с применением мультимодальных схем, так как судоходные линии предполагают транспортировку из одного порта в другой. </span>		 			
-			 			<button class="order">Заказать</button>
+			 			<button href="#order" id = "2" class="order selector">Заказать</button>
 			 		</div> 
 				</div>
 				<div class="slide">
@@ -70,7 +70,7 @@
 			 			<span class="txtLow">
 			 				У нас есть прямые договоры с ведущими железнодорожными операторами, поэтому мы предлагаем адекватные цены без накруток.
 			 			</span>
-			 			<button class="order">Заказать</button>
+			 			<button href="#order" id = "3" class="order selector">Заказать</button>
 			 		</div> 
 				</div>
 				<div class="slide">
@@ -81,7 +81,7 @@
 			 			<span class="txtLow">
 			 				Наши сотрудники подберут для вас оптимальную логистическую схему доставки (LCL, LTL, авиа+авто). Также мы произведем все расчеты и проконсультируем по любым вопросам.
 			 			</span>
-			 			<button class="order">Заказать</button>
+			 			<button href="#order" id = "4" class="order selector">Заказать</button>
 			 		</div> 	
 				</div>
 				<div class="slide">
@@ -92,7 +92,7 @@
 			 			<span class="txtLow">
 			 				При заказе вам не нужно будет тратить время и деньги на работу с финансовой стороной перевозки, мы сделаем это за вас.
 			 			</span>
-			 			<button class="order">Заказать</button>
+			 			<button href="#order" id = "5" class="order selector">Заказать</button>
 			 		</div> 	
 				</div>
 				<div class="slide">
@@ -103,20 +103,24 @@
 			 			<span class="txtLow">
 			 				NANO обладает богатым опытом, профессиональными знаниями и необходимыми ресурсами, чтобы осуществлять консультации по вопросам логистики и таможенного оформления. 
 			 			</span>
-			 			<button href="#order" class="order">Заказать</button>
+			 			<button href="#order" id = "6" class="order selector">Заказать</button>
 			 		</div> 	
 				</div>
 			</div>
-			<div id="text-popup" class="white-popup mfp-hide">
-				<h3 id = "take"></h3>
-				<div class="form_block">
-					<form action="#">
-						<input type="text" class="name_input" name="name" placeholder="| Введите Ваше имя">
-						<input type="tel" class="phone_input" name="tel" placeholder="| Введите Ваш номер">
-						<input type="hidden" class = "input-selector">
-						<button class="order">Заказать</button>
-					</form>	
-				</div>
+			<div id="text-popup" class="white-popup mfp-hide styleForm">
+				<h2>Закажите звонок</h2>
+				<span>Мы позвоним или напишем вам, чтобы оформить ваш заказ</span>
+				<form class = "form_block" action="#">
+					<fieldset>
+						<legend>Имя</legend>
+						<input type="text" class="styleInput name_input" name="name" placeholder="Владислав...">
+					</fieldset>
+					<fieldset>
+						<legend>Телефон или Email</legend>
+						<input type="tel" class="styleInput phone_input" name="tel" placeholder="+1 234...">
+					</fieldset>
+					<button class="order">Заказать</button>
+				</form>	
 			</div>
 		</div>
 	</section>
