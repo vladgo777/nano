@@ -1,5 +1,5 @@
 @import 'mixins';
-$padding-top: 40px
+$padding-top: 60px
 $darkBlue: #08142C
 *
 	margin: 0
@@ -46,7 +46,7 @@ strong
 
 .content1
 	position: relative
-	max-width: 1704px
+	max-width: 1390px
 	width: 100%
 	height: auto
 	margin: auto
@@ -95,7 +95,6 @@ header
 	position: relative
 	display: flex
 	flex-direction: row
-	justify-content: space-between
 	align-items: center
 	flex-wrap: nowrap
 	max-width: 1920px
@@ -103,27 +102,64 @@ header
 	height: 72px
 	margin: auto
 	.logo
-		width: 15%
+		width: 17.5%
 		margin: 0 0 0 20px
-	nav
-		position: relative
-		max-width: 512px
-		width: 90%
-		display: block
-		z-index: 15
-		@include mobile
-			display: none
-		.menu li
+	.menu 
+		width: 60%
+		transition: .4s
+		z-index: 15	
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		li
 			display: inline-block
 			font-size: 19px
 			line-height: 24px
-			margin: 0 28px 0 0
 			color: #fff
-			height: 35px
 			cursor: pointer
-			&:hover, &:after
-				box-sizing: border-box
-				border-bottom: 4px solid #00adef
+			&:hover
+				transition: .4s
+				color: #999999
+
+.intro
+	.content1
+		width: 82%
+		.imgIntro
+			img
+				max-width: 100%
+			  	height: auto
+			  	position: relative
+			.mainTag			
+				max-width: inherit  	
+				position: absolute
+				color: white 
+				top: 25%
+				left: 22%
+				h1
+					font-size: 81.7955px
+					line-height: 98px
+				h2
+					font-size: 36.7083px
+					font-weight: 100	
+		.txtIntro
+			padding: 100px 0 0 0
+			display: flex
+			flex-direction: column
+			flex-wrap: nowrap	
+			justify-content: space-between
+			h2
+				font-size: 30px
+				color: #000000
+			p
+				font-size: 18px
+				color: #282828
+				padding: 30px 0 0 0
+			span
+				font-size: 12px
+				color: #828282		
+				padding: 17px 0 0 0
+
+	
 .steps
 	display: flex
 	flex-direction: column
@@ -163,39 +199,34 @@ header
 				padding: $padding-top 0 0 0 
 
 .advantages
+	padding: $padding-top 0 0 0
 	.content1
 		max-width: 1920px
-		width: 100%
 		height: auto
 		margin: auto
-		@include l-desk
-			max-width: 1750px
-		@include m-desk
-			max-width: 1550px
-		@include mobile
-			padding: 0 20px
-			box-sizing: border-box
 		.slider
 			.form_block
-					fieldset
-						width: 80%
-						legend
-							color: black
-							font-size: 14.6997px
-						.styleInput
-							border: none
-							color: #D7D7D7
-							font-size: 24.0541px
-							margin: 0
+				fieldset
+					width: 80%
+					legend
+						color: black
+						font-size: 14.6997px
+					.styleInput
+						border: none
+						color: #D7D7D7
+						font-size: 24.0541px
+						margin: 0
 			.slide
 				position: relative
+				img
+					max-width: 100%
+					height: auto
 				.sliderTxt
-					width: 90%
+					width: 83%
 					display: flex
 					flex-direction: column
 					text-align: center
 					align-items: center
-					max-width: 1604px
 					height: auto
 					margin: 0 
 					position: absolute
@@ -268,7 +299,7 @@ footer
 		opacity: .7
 		transition: .4s
 		&:hover
-			color: #00adef
+			color: #999999
 		
 
     

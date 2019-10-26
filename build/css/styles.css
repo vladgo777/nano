@@ -50,7 +50,7 @@ strong {
 
 .content1 {
   position: relative;
-  max-width: 1704px;
+  max-width: 1390px;
   width: 100%;
   height: auto;
   margin: auto; }
@@ -111,8 +111,6 @@ header {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
           flex-direction: row;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
           align-items: center;
   flex-wrap: nowrap;
@@ -121,28 +119,70 @@ header {
   height: 72px;
   margin: auto; }
   header .logo {
-    width: 15%;
+    width: 17.5%;
     margin: 0 0 0 20px; }
-  header nav {
-    position: relative;
-    max-width: 512px;
-    width: 90%;
-    display: block;
-    z-index: 15; }
-    @media screen and (min-width: 300px) and (max-width: 1024px) {
-      header nav {
-        display: none; } }
-    header nav .menu li {
+  header .menu {
+    width: 60%;
+    -webkit-transition: .4s;
+    transition: .4s;
+    z-index: 15;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+            justify-content: space-between; }
+    header .menu li {
       display: inline-block;
       font-size: 19px;
       line-height: 24px;
-      margin: 0 28px 0 0;
       color: #fff;
-      height: 35px;
       cursor: pointer; }
-      header nav .menu li:hover, header nav .menu li:after {
-        box-sizing: border-box;
-        border-bottom: 4px solid #00adef; }
+      header .menu li:hover {
+        -webkit-transition: .4s;
+        transition: .4s;
+        color: #999999; }
+
+.intro .content1 {
+  width: 82%; }
+  .intro .content1 .imgIntro img {
+    max-width: 100%;
+      max-width-height: auto;
+      max-width-position: relative; }
+  .intro .content1 .imgIntro .mainTag {
+    max-width: inherit;
+    position: absolute;
+    color: white;
+    top: 25%;
+    left: 22%; }
+    .intro .content1 .imgIntro .mainTag h1 {
+      font-size: 81.7955px;
+      line-height: 98px; }
+    .intro .content1 .imgIntro .mainTag h2 {
+      font-size: 36.7083px;
+      font-weight: 100; }
+  .intro .content1 .txtIntro {
+    padding: 100px 0 0 0;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+            justify-content: space-between; }
+    .intro .content1 .txtIntro h2 {
+      font-size: 30px;
+      color: #000000; }
+    .intro .content1 .txtIntro p {
+      font-size: 18px;
+      color: #282828;
+      padding: 30px 0 0 0; }
+    .intro .content1 .txtIntro span {
+      font-size: 12px;
+      color: #828282;
+      padding: 17px 0 0 0; }
 
 .steps {
   display: -webkit-box;
@@ -153,7 +193,7 @@ header {
   flex-wrap: nowrap;
   -webkit-box-pack: justify;
           justify-content: space-between;
-  padding: 40px 0 0 0; }
+  padding: 60px 0 0 0; }
   .steps h2 {
     font-size: 30px;
     line-height: 36px;
@@ -188,62 +228,55 @@ header {
     .steps .steps_block .step-el1 {
       width: 33%; }
       .steps .steps_block .step-el1:nth-child(4), .steps .steps_block .step-el1:nth-child(5), .steps .steps_block .step-el1:nth-child(6) {
-        padding: 40px 0 0 0; }
+        padding: 60px 0 0 0; }
 
-.advantages .content1 {
-  max-width: 1920px;
-  width: 100%;
-  height: auto;
-  margin: auto; }
-  @media screen and (min-width: 1368px) and (max-width: 1828px) {
-    .advantages .content1 {
-      max-width: 1750px; } }
-  @media screen and (min-width: 1281px) and (max-width: 1550px) {
-    .advantages .content1 {
-      max-width: 1550px; } }
-  @media screen and (min-width: 300px) and (max-width: 1024px) {
-    .advantages .content1 {
-      padding: 0 20px;
-      box-sizing: border-box; } }
-  .advantages .content1 .slider .form_block fieldset {
-    width: 80%; }
-    .advantages .content1 .slider .form_block fieldset legend {
-      color: black;
-      font-size: 14.6997px; }
-    .advantages .content1 .slider .form_block fieldset .styleInput {
-      border: none;
-      color: #D7D7D7;
-      font-size: 24.0541px;
-      margin: 0; }
-  .advantages .content1 .slider .slide {
-    position: relative; }
-    .advantages .content1 .slider .slide .sliderTxt {
-      width: 90%;
-      display: -webkit-box;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-              flex-direction: column;
-      text-align: center;
-      -webkit-box-align: center;
-              align-items: center;
-      max-width: 1604px;
-      height: auto;
-      margin: 0;
-      position: absolute;
-      color: white;
-      top: 25%;
-      left: 8%; }
-      .advantages .content1 .slider .slide .sliderTxt .txtTop {
-        font-size: 14px; }
-      .advantages .content1 .slider .slide .sliderTxt h2 {
-        font-size: 82px;
-        padding: 0; }
-      .advantages .content1 .slider .slide .sliderTxt .txtLow {
-        padding: 40px;
-        width: 55%;
-        font-size: 24px;
-        line-height: 29px; }
+.advantages {
+  padding: 60px 0 0 0; }
+  .advantages .content1 {
+    max-width: 1920px;
+    height: auto;
+    margin: auto; }
+    .advantages .content1 .slider .form_block fieldset {
+      width: 80%; }
+      .advantages .content1 .slider .form_block fieldset legend {
+        color: black;
+        font-size: 14.6997px; }
+      .advantages .content1 .slider .form_block fieldset .styleInput {
+        border: none;
+        color: #D7D7D7;
+        font-size: 24.0541px;
+        margin: 0; }
+    .advantages .content1 .slider .slide {
+      position: relative; }
+      .advantages .content1 .slider .slide img {
+        max-width: 100%;
+        height: auto; }
+      .advantages .content1 .slider .slide .sliderTxt {
+        width: 83%;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        text-align: center;
+        -webkit-box-align: center;
+                align-items: center;
+        height: auto;
+        margin: 0;
+        position: absolute;
+        color: white;
+        top: 25%;
+        left: 8%; }
+        .advantages .content1 .slider .slide .sliderTxt .txtTop {
+          font-size: 14px; }
+        .advantages .content1 .slider .slide .sliderTxt h2 {
+          font-size: 82px;
+          padding: 0; }
+        .advantages .content1 .slider .slide .sliderTxt .txtLow {
+          padding: 60px;
+          width: 55%;
+          font-size: 24px;
+          line-height: 29px; }
 
 .contacts {
   display: -webkit-box;
@@ -257,7 +290,7 @@ header {
   text-align: center;
   width: 50%;
   margin: 0 auto;
-  padding: 40px 0 154px 0; }
+  padding: 60px 0 154px 0; }
   .contacts h1 {
     color: #2857B4;
     font-size: 64px; }
@@ -315,4 +348,4 @@ footer {
     -webkit-transition: .4s;
     transition: .4s; }
     footer a:hover, footer li:hover {
-      color: #00adef; }
+      color: #999999; }
