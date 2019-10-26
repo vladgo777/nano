@@ -151,11 +151,13 @@ header {
       max-width-height: auto;
       max-width-position: relative; }
   .intro .content1 .imgIntro .mainTag {
-    max-width: inherit;
+    width: 100%;
+    max-width: 1390px;
+    height: auto;
+    margin: auto;
+    text-align: center;
     position: absolute;
-    color: white;
-    top: 25%;
-    left: 22%; }
+    color: white; }
     .intro .content1 .imgIntro .mainTag h1 {
       font-size: 81.7955px;
       line-height: 98px; }
@@ -284,12 +286,14 @@ header {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
           justify-content: space-between;
-  text-align: center;
   width: 50%;
-  margin: 0 auto;
+  max-width: 1390px;
+  height: auto;
+  margin: auto;
+  text-align: center;
   padding: 60px 0 154px 0; }
   .contacts h1 {
     color: #2857B4;
