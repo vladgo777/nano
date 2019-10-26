@@ -86,11 +86,17 @@ strong {
           align-items: center; }
   .form_block fieldset {
     border: 1.33634px solid #BEBEBE;
-    height: 62.52px; }
+    height: 72.52px; }
     .form_block fieldset legend {
-      color: black;
+      margin-left: 50px;
+      color: #333333;
+      font-weight: 550;
       font-size: 14.6997px; }
     .form_block fieldset .styleInput {
+      font-family: Helvetica;
+      width: 90%;
+      height: 100%;
+      outline: none;
       border: none;
       color: #D7D7D7;
       font-size: 24.0541px;
@@ -157,6 +163,16 @@ strong {
     .advantages .content1 {
       padding: 0 20px;
       box-sizing: border-box; } }
+  .advantages .content1 .slider .form_block fieldset {
+    width: 80%; }
+    .advantages .content1 .slider .form_block fieldset legend {
+      color: black;
+      font-size: 14.6997px; }
+    .advantages .content1 .slider .form_block fieldset .styleInput {
+      border: none;
+      color: #D7D7D7;
+      font-size: 24.0541px;
+      margin: 0; }
   .advantages .content1 .slider .slide {
     position: relative; }
     .advantages .content1 .slider .slide .sliderTxt {
@@ -186,16 +202,6 @@ strong {
         width: 55%;
         font-size: 24px;
         line-height: 29px; }
-    .advantages .content1 .slider .slide.form_block fieldset {
-      width: 80%; }
-      .advantages .content1 .slider .slide.form_block fieldset legend {
-        color: black;
-        font-size: 14.6997px; }
-      .advantages .content1 .slider .slide.form_block fieldset .styleInput {
-        border: none;
-        color: #D7D7D7;
-        font-size: 24.0541px;
-        margin: 0; }
 
 .contacts {
   display: -webkit-box;
@@ -233,3 +239,37 @@ strong {
               flex-direction: row; }
       .contacts .mainInfo span h2 {
         font-size: 30px; }
+
+footer {
+  background-color: #08142C;
+  padding: 28px 0 !important; }
+  footer .four_half_container {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    flex-wrap: nowrap;
+    width: 85%;
+    -webkit-box-pack: justify;
+            justify-content: space-between; }
+    footer .four_half_container .footer_block3 {
+      padding: 20px 0 !important; }
+  footer img {
+    margin-top: 48.35px; }
+  footer h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff; }
+  footer ul li {
+    margin-top: 13px; }
+  footer a, footer li {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #fff;
+    opacity: .7;
+    -webkit-transition: .4s;
+    transition: .4s; }
+    footer a:hover, footer li:hover {
+      color: #00adef; }

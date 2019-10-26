@@ -3,7 +3,7 @@
     position: relative;
     background: #FFF;
     padding: 70px 53px 70px 53px;
-    width: auto;
+    width: 50%;
     text-align: center;
     max-width: 500px;
     margin: auto;
@@ -14,10 +14,20 @@
 
 .white-popup h2{
     font-size: 40.5917px;
+    padding: 0 0 20px 0;
+    color:  #333333;
 }
 .white-popup span{
-    font-size: 15.7857px;
-    padding: 22px 0 82px 0;
+    font-size: 18px;
+    line-height:  19px;
+    color:  #333333;
+}
+.white-popup fieldset{
+    width: 90%;
+    margin: 40px 0 0 0 ;
+}
+.white-popup button{
+    margin: 82px 0 0 0 ;
 }
 .mfp-bg {
   top: 0;
@@ -88,6 +98,7 @@
 
 .mfp-auto-cursor .mfp-content {
   cursor: auto; }
+
 
 .mfp-close,
 .mfp-arrow,
@@ -164,6 +175,7 @@ button::-moz-focus-inner {
     top: 1px; }
 
 .mfp-close-btn-in .mfp-close {
+  display: none;
   color: #333; }
 
 .mfp-image-holder .mfp-close,

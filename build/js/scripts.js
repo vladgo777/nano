@@ -2,19 +2,18 @@ $(document).ready(function(){
 //slider slick
   $('.slider').slick({
   	dots: true,
-  	autoplay: true,
+  	// autoplay: true,
 	slidesToShow: 1,
 	slidesToScroll: 1,
-	infinite: true,
-	speed: 2000
+	// infinite: true,
+	// speed: 2000
   });
 //order popup
 	$('.order').magnificPopup({
 		items: {
           src: '#text-popup'
         },
-        type:'inline',
-	  	midClick: true
+        type:'inline'
     });
 
     $('.selector').click(function(event) {
