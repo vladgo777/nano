@@ -1,0 +1,380 @@
+@import 'mixins';
+$padding-top: 60px
+$darkBlue: #08142C
+$lightBlue: #2857B4
+*
+	margin: 0
+	padding: 0
+
+html
+	overflow-x: hidden
+  	overflow-y: hidden
+	
+body
+	font-family: 'Stolzl', sans-serif
+	background: none
+
+header, footer
+	box-sizing: border-box
+	margin: auto !important
+	z-index: 10	
+
+section
+	width: 100%
+	box-sizing: border-box
+	z-index: 10
+	position: relative
+	background-color: #fff !important
+	overflow: hidden
+
+a
+	text-decoration: none
+	color: inherit
+
+ul, li
+	list-style: none
+
+strong
+	font-weight: 700
+
+.two_half_container
+	display: flex
+	flex-direction: row
+	flex-wrap: nowrap
+	justify-content: space-between
+	@include mobile
+		flex-direction: column
+
+.content1
+	position: relative
+	max-width: 1390px
+	width: 100%
+	height: auto
+	margin: auto
+	@include l-desk
+		max-width: 1300px
+	@include m-desk
+		max-width: 1200px
+	@include mobile
+		padding: 0 20px
+		box-sizing: border-box
+
+.order
+	background-color: #2857B4
+	width: 254px
+	height: 56px
+	vertical-align: center
+	border: none
+	color: white
+	font-size: 24px
+
+.preloader
+  	position: fixed
+  	left: 0
+  	top: 0
+  	right: 0
+  	bottom: 0
+  	background: $darkBlue
+  	z-index: 1001
+  	.content1
+	  	max-width: 1000px 
+	  	top: 30% 	
+	  	img
+	  		display: none
+
+header
+	width: 100%
+	background-color: $darkBlue
+	position: relative
+	display: flex
+	flex-direction: row
+	align-items: center
+	flex-wrap: nowrap
+	max-width: 1920px
+	width: 100%
+	height: 72px
+	margin: auto
+	.logo
+		width: 17.5%
+		margin: 0 0 0 20px
+	.menu 
+		width: 60%
+		transition: .4s
+		z-index: 15	
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		li
+			display: inline-block
+			font-size: 19px
+			line-height: 24px
+			color: #fff
+			cursor: pointer
+			&:hover
+				transition: .4s
+				color: #999999
+
+.intro
+	.content1
+		width: 82%
+		.imgIntro	
+			width: 100% 	
+			max-width: 1390px
+			height: auto
+			margin: auto
+			text-align: center
+			color: white 
+			background: url(../img/export.png)  no-repeat
+			img
+				padding-top: $padding-top
+			h1
+				font-size: 81.7955px
+				line-height: 98px
+			h2
+				font-size: 36.7083px
+				font-weight: 100
+				padding-bottom: 80px	
+		.txtIntro
+			padding: 100px 0 0 0
+			display: flex
+			flex-direction: column
+			flex-wrap: nowrap	
+			justify-content: space-between
+			h2
+				font-size: 30px
+				color: #000000
+			p
+				font-size: 18px
+				color: #282828
+				padding: 30px 0 0 0
+			span
+				font-size: 12px
+				color: #828282		
+				padding: 17px 0 0 0
+
+	
+.steps
+	display: flex
+	flex-direction: column
+	flex-wrap: nowrap
+	justify-content: space-between
+	padding: $padding-top 0 0 0
+	h2
+		font-size: 30px
+		line-height: 36px
+		color: #000000
+		text-align: center
+	.steps_block
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-wrap: wrap
+		margin: 55px 0
+		width: 100%
+		img
+			width: 900px
+		.step-el
+			width: 18%
+			text-align: center
+			padding: 15px 0 0 0
+			align-items: center
+			&:nth-child(6), &:nth-child(7), &:nth-child(8), &:nth-child(9), &:nth-child(10)
+				padding: 50px 0 0 0  
+			p
+				margin-top: 20px
+				font-size: 18px
+				line-height: 28px	
+			img
+				width: 18%
+		.step-el1
+			width: 33%
+			&:nth-child(4), &:nth-child(5), &:nth-child(6)
+				padding: $padding-top 0 0 0 
+
+.advantages
+	padding: $padding-top 0 0 0		
+	.content1
+		max-width: 1920px
+		height: auto
+		margin: auto
+		.slider			
+			.slide
+				position: relative
+				img
+					max-width: 100%
+					height: auto
+				.sliderTxt
+					width: 83%
+					display: flex
+					flex-direction: column
+					text-align: center
+					align-items: center
+					height: auto
+					position: absolute
+					color: white
+					margin: auto
+					left: 8%
+					.txtTop
+						font-size: 14px
+					h2
+						font-size: 82px	
+						padding: 0
+					.txtLow
+						padding: $padding-top
+						width: 55%
+						font-size: 24px
+						line-height: 29px	
+		.arrows
+			width: 100%
+			height: 60.41px
+			position: absolute
+			display: flex
+			justify-content: space-between
+			padding-top: 15%
+			z-index: 500	
+			.arrow
+				cursor: pointer
+				width: 60.41px
+				height: 60.41px
+				margin: 0 50.79px 0 50.79px
+				img
+					height: 100%
+					width: 100% 				
+.form_block
+	align-items: center
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	fieldset
+		border: 1.33634px solid #BEBEBE
+		height: 72.52px
+		margin: 20px 0 0 0
+		width: 90%
+		button
+			margin: 82px 0 0 0
+		legend
+			color: black
+			font-size: 14.6997px
+			margin-left: 50px
+			font-weight: 550
+			font-size: 14.6997px
+		.styleInput
+			border: none						
+			width: 90%
+			height: 100%
+			font-family: "Helvetica"
+			outline: none
+			color: #D7D7D7
+			font-size: 24.0541px
+			margin: 0
+	button
+			margin: 40px 0 0 0
+
+.price
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-between
+	width: 100%
+	h2
+		font-size: 48px
+		color: $lightBlue
+		padding: 97px 0 51px 0
+	.cont
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		.form_block
+			width: 50%
+		img
+			max-width: 700px
+			height: 80%
+.form_block1
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	width: 47%
+	max-width: 700px
+	fieldset
+		border: 1.33634px solid #BEBEBE
+		height: 81.52px
+		margin: 0 0 35px 0
+		text-align: center	
+		legend
+			color: black
+			font-size: 14.6997px
+			margin-left: 50px
+			font-weight: 550
+			font-size: 14.6997px
+		.styleInput
+			border: none					
+			width: 90%
+			height: 100%
+			font-family: "Helvetica"
+			outline: none
+			color: #D7D7D7
+			font-size: 24.0541px
+			margin: 0					
+	button
+		margin: 40px 0 0 0
+		width: 60%
+
+
+.contacts
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	width: 50% 	
+	max-width: 1390px
+	height: auto
+	margin: auto
+	text-align: center
+	padding: $padding-top 0 154px 0
+	h2
+		color: $lightBlue
+		font-size: 64px
+	.mainInfo
+		width: 100%
+		line-height: 46px
+		display: flex
+		align-items: center		
+		flex-wrap: wrap
+		flex-direction: row
+		justify-content: space-around	
+		span
+			display: flex
+			font-size: 28px	
+			flex-direction: row
+			h3
+				font-size: 30px	
+
+footer
+	background-color: $darkBlue
+	padding: 28px 0 !important
+	max-width: 1920px
+	.four_half_container
+		display: flex
+		flex-direction: row
+		flex-wrap: nowrap
+		width: 85%
+		justify-content: space-between
+		.footer_block3
+			padding: 20px 0 !important
+	img
+		margin-top: 48.35px
+	h3
+		font-size: 18px
+		font-weight: 500
+		color: #fff
+	ul
+		li
+			margin-top: 13px
+	a, li
+		font-size: 16px
+		font-weight: 300
+		line-height: 24px
+		color: #fff
+		opacity: .7
+		transition: .4s
+		&:hover
+			color: #999999
