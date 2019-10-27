@@ -2,6 +2,7 @@ $(document).ready(function(){
 //slider slick
   $('.slider').slick({
   	dots: true,
+<<<<<<< HEAD
   	autoplay: true,
   	slidesToShow: 1,
   	slidesToScroll: 1,
@@ -19,6 +20,13 @@ $(document).ready(function(){
         }
     });
 
+=======
+  	// autoplay: true,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	
+  });
+>>>>>>> master
 //order popup
 	$('.order').magnificPopup({
 		items: {
@@ -32,9 +40,13 @@ $(document).ready(function(){
 	    $('.input-selector').val(value);
 	});
 
+<<<<<<< HEAD
 
 });
  $(window).on('load', function() {
    $('.imgLoad').fadeIn(2000);
    $('.preloader').delay(2500).fadeOut('slow');
   });
+=======
+});
+>>>>>>> master
