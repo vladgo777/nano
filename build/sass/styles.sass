@@ -1,4 +1,4 @@
-@import 'mixins';
+@import 'mixins'
 $padding-top: 60px
 $darkBlue: #08142C
 $lightBlue: #2857B4
@@ -8,12 +8,8 @@ $lightBlue: #2857B4
 
 html
 	overflow-x: hidden
-<<<<<<< HEAD
   	overflow-y: hidden
 	
-=======
-
->>>>>>> master
 body
 	font-family: 'Stolzl', sans-serif
 	background: none
@@ -21,12 +17,7 @@ body
 header, footer
 	box-sizing: border-box
 	margin: auto !important
-<<<<<<< HEAD
 	z-index: 10	
-=======
-	z-index: 10
-	
->>>>>>> master
 
 section
 	width: 100%
@@ -56,7 +47,7 @@ strong
 
 .content1
 	position: relative
-	max-width: 1390px
+	max-width: 1704px
 	width: 100%
 	height: auto
 	margin: auto
@@ -64,6 +55,8 @@ strong
 		max-width: 1300px
 	@include m-desk
 		max-width: 1200px
+	@include tablet
+		max-width: 1000px
 	@include mobile
 		padding: 0 20px
 		box-sizing: border-box
@@ -76,8 +69,17 @@ strong
 	border: none
 	color: white
 	font-size: 24px
+	@include l-desk
+		font-size: 22px
+	@include m-desk
+		font-size: 20px	
+		width: 220px
+		height: 50px
+	@include sm-desk
+		font-size: 18px	
+		width: 200px
+		height: 45px	
 
-<<<<<<< HEAD
 .preloader
   	position: fixed
   	left: 0
@@ -85,83 +87,235 @@ strong
   	right: 0
   	bottom: 0
   	background: $darkBlue
-  	z-index: 1001
+  	z-index: 2000
   	.content1
 	  	max-width: 1000px 
 	  	top: 30% 	
+	  	@include l-desk
+	  		max-width: 900px	  	
+	  	@include m-desk
+	  		max-width: 800px	
 	  	img
 	  		display: none
+		  	@include l-desk
+		  		max-width: 900px
+		  	@include m-desk
+		  		max-width: 800px
 
-=======
->>>>>>> master
 header
-	width: 100%
-	background-color: $darkBlue
-	position: relative
-	display: flex
-	flex-direction: row
-	align-items: center
-	flex-wrap: nowrap
-<<<<<<< HEAD
-=======
-	max-width: 1920px
->>>>>>> master
-	width: 100%
-	height: 72px
-	margin: auto
-	.logo
-		width: 17.5%
-		margin: 0 0 0 20px
-	.menu 
-		width: 60%
-		transition: .4s
-		z-index: 15	
-		display: flex
-		flex-direction: row
-		justify-content: space-between
-		li
-			display: inline-block
-			font-size: 19px
-			line-height: 24px
-			color: #fff
-			cursor: pointer
-			&:hover
+	.header
+		width: 100%
+		background-color: $darkBlue
+		position: relative
+		width: 100%
+		height: auto
+		padding: auto
+		margin: auto
+		z-index: 150px
+		@include tablet 
+			transform: translateY(-100%)
+			transition: 1s
+			display: none
+		@include mobile 
+			transform: translateY(-100%)
+			transition: .4s
+			display: none	
+		.content1
+			max-width: 1920px
+			display: flex
+			flex-direction: row
+			align-items: center
+			flex-wrap: nowrap
+			@include l-desk
+				max-width: 1500px
+			@include m-desk
+				max-width: 1250px
+			@include sm-desk
+				max-width: 1000px	
+			@include tablet 		
+			.logo
+				width: 17.5%
+				margin: 0 0 0 20px
+				img
+					height: auto
+					width: 40%
+				@include l-desk
+					width: 17%
+					img
+						width: 50%
+				@include m-desk
+					width: 16%
+					img
+						width: 50%
+							
+			.menu 
+				width: 62%
 				transition: .4s
-				color: #999999
+				z-index: 15	
+				display: flex
+				flex-direction: row
+				justify-content: space-between
+				li
+					display: inline-block
+					font-size: 19px
+					line-height: 70px
+					color: #fff
+					cursor: pointer
+					@include l-desk
+						font-size: 16px
+					@include m-desk
+						font-size: 14px
+						line-height: 50px
+					@include sm-desk
+						font-size: 14px	
+						line-height: 45px
+					&:hover
+						transition: .4s
+						color: #999999
+	@include tablet
+		.headerActive 
+			transform: translateY(0%)
+			transition: 1s
+			display: block
+	@include mobile 
+		.headerActive 
+			transform: translateY(0%)
+			transition: .4s
+			display: block
+
+	.headerMobile
+		display: none
+		width: 100%
+		background-color: transparent
+		position: absolute
+		width: 100%
+		height: auto
+		padding: auto
+		margin: auto
+		@include tablet
+			display: block
+		@include mobile
+			display: block
+		.burger
+			outline: none
+			width: 34px
+			height: 34px
+			position: fixed
+			left: 15px
+			top: 16px
+			transform: rotate(0deg)
+			transition: .5s ease-in-out
+			cursor: pointer
+			z-index: 1000
+			span
+				display: block
+				position: absolute
+				margin: 0px
+				height: 4px
+				width: 20px
+				background: #fff
+				border-radius: 3px
+				left: 0
+				transform: rotate(0deg)
+				transition: .25s ease-in-out
+				&:nth-child(1)
+					top: 0px
+				&:nth-child(2)
+					top: 8px
+				&:nth-child(3)
+					top: 8px
+				&:nth-child(4)
+					top: 16px
+			&.open
+				span
+					&:nth-child(1)
+						top: 12px
+						width: 0%
+						left: 50%
+					&:nth-child(2)
+						transform: rotate(45deg)
+					&:nth-child(3)
+						transform: rotate(-45deg)
+					&:nth-child(4)
+						top: 12px
+						width: 0%
+						left: 50%				
 
 .intro
 	.content1
 		width: 82%
+		@include m-desk
+			width: 100%
+		@include sm-desk
+			width: 100%	
+		@include tablet
+			width: 100%	
+			padding: 0
+			box-sizing: border-box	
 		.imgIntro	
-			width: 100% 	
-			max-width: 1390px
+			width: 90% 	
+			max-width: 1704px
 			height: auto
 			margin: auto
 			text-align: center
 			color: white 
 			background: url(../img/export.png)  no-repeat
+			@include l-desk
+				max-width: 1500px
+				width: 100% 
+			@include m-desk
+				width: 100% 
+			@include sm-desk
+				width: 100% 	
+			@include tablet
+				width: 100% 	
 			img
 				padding-top: $padding-top
+				width: 20%
 			h1
 				font-size: 81.7955px
 				line-height: 98px
+				@include l-desk
+					font-size: 70px
+				@include m-desk	
+					font-size: 60px
+				@include sm-desk	
+					font-size: 50px	
+				@include tablet
+					font-size: 40px 	
 			h2
 				font-size: 36.7083px
 				font-weight: 100
 				padding-bottom: 80px	
+				@include l-desk
+					font-size: 26px
+				@include m-desk
+					font-size: 24px
+				@include sm-desk	
+					font-size: 22px	
 		.txtIntro
 			padding: 100px 0 0 0
 			display: flex
 			flex-direction: column
 			flex-wrap: nowrap	
 			justify-content: space-between
+			@include sm-desk
+				width: 90%
+				margin: auto
+			@include tablet
+				width: 95%
+				margin: auto	
 			h2
 				font-size: 30px
 				color: #000000
+				@include sm-desk
+					font-size: 27px
 			p
 				font-size: 18px
 				color: #282828
 				padding: 30px 0 0 0
+				@include sm-desk
+					font-size: 15px
 			span
 				font-size: 12px
 				color: #828282		
@@ -174,37 +328,45 @@ header
 	flex-wrap: nowrap
 	justify-content: space-between
 	padding: $padding-top 0 0 0
-	h2
-		font-size: 30px
-		line-height: 36px
-		color: #000000
-		text-align: center
-	.steps_block
-		display: flex
-		justify-content: center
-		align-items: center
-		flex-wrap: wrap
-		margin: 55px 0
-		width: 100%
-		img
-			width: 900px
-		.step-el
-			width: 18%
+	.content1
+		h2
+			font-size: 30px
+			line-height: 36px
+			color: #000000
 			text-align: center
-			padding: 15px 0 0 0
+			@include sm-desk
+				font-size: 27px
+		.steps_block
+			display: flex
+			justify-content: center
 			align-items: center
-			&:nth-child(6), &:nth-child(7), &:nth-child(8), &:nth-child(9), &:nth-child(10)
-				padding: 50px 0 0 0  
-			p
-				margin-top: 20px
-				font-size: 18px
-				line-height: 28px	
+			flex-wrap: wrap
+			margin: 55px 0
+			width: 100%
+			@include sm-desk	
+				width: 90%
+				margin: 55px auto
 			img
+				width: 900px
+			.step-el
 				width: 18%
-		.step-el1
-			width: 33%
-			&:nth-child(4), &:nth-child(5), &:nth-child(6)
-				padding: $padding-top 0 0 0 
+				text-align: center
+				padding: 15px 0 0 0
+				align-items: center
+				p
+					margin-top: 20px
+					font-size: 18px
+					line-height: 28px	
+					@include sm-desk
+						font-size: 15px
+				img
+					width: 18%
+			.step-el1
+				width: 33%
+				&:nth-child(4), &:nth-child(5), &:nth-child(6)
+					padding: $padding-top 0 0 0 
+					@include sm-desk
+						padding: 50px 0 0 0 
 
 .advantages
 	padding: $padding-top 0 0 0		
@@ -212,6 +374,8 @@ header
 		max-width: 1920px
 		height: auto
 		margin: auto
+		@include l-desk
+			width: 100%
 		.slider			
 			.slide
 				position: relative
@@ -219,32 +383,48 @@ header
 					max-width: 100%
 					height: auto
 				.sliderTxt
-					width: 83%
+					width: 100%
 					display: flex
 					flex-direction: column
 					text-align: center
 					align-items: center
 					height: auto
-					margin: 0 
+					margin: auto
 					position: absolute
 					color: white
-<<<<<<< HEAD
-					top: 22%
-=======
-					top: 25%
->>>>>>> master
-					left: 8%
+					top: 20%
+					@include l-desk
+						top: 15%
+					@include m-desk
+						top: 12%
+					@include sm-desk
+						top: 10%		
 					.txtTop
 						font-size: 14px
+						@include sm-desk
+							font-size: 12px	
 					h2
 						font-size: 82px	
 						padding: 0
+						@include l-desk
+							font-size: 75px
+						@include m-desk
+							font-size: 60px	
+						@include sm-desk
+							font-size: 50px		
 					.txtLow
 						padding: $padding-top
 						width: 55%
 						font-size: 24px
-<<<<<<< HEAD
 						line-height: 29px	
+						@include l-desk
+							font-size: 22px
+						@include m-desk
+							font-size: 20px	
+							padding: 30px
+						@include sm-desk
+							font-size: 18px	
+							padding: 20px	
 		.arrows
 			width: 100%
 			height: 60.41px
@@ -260,10 +440,16 @@ header
 				margin: 0 50.79px 0 50.79px
 				img
 					height: 100%
-					width: 100% 				
-=======
-						line-height: 29px		
->>>>>>> master
+					width: 100% 
+					@include l-desk
+						height: 90%		
+						width: 90%	
+					@include m-desk
+						height: 80%
+						width: 80%
+					@include sm-desk
+						height: 70%
+						width: 70%			
 .form_block
 	align-items: center
 	display: flex
@@ -274,6 +460,13 @@ header
 		height: 72.52px
 		margin: 20px 0 0 0
 		width: 90%
+		@include l-desk
+			height: 75px	
+		@include m-desk
+			height: 65px
+		@include sm-desk
+			height: 55px	
+			margin: 0 0 20px 0
 		button
 			margin: 82px 0 0 0
 		legend
@@ -282,6 +475,8 @@ header
 			margin-left: 50px
 			font-weight: 550
 			font-size: 14.6997px
+			@include sm-desk
+				font-size: 12px
 		.styleInput
 			border: none						
 			width: 90%
@@ -291,6 +486,12 @@ header
 			color: #D7D7D7
 			font-size: 24.0541px
 			margin: 0
+			@include l-desk
+				font-size: 20px
+			@include m-desk
+				font-size: 18px		
+			@include sm-desk
+				font-size: 18px	
 	button
 			margin: 40px 0 0 0
 
@@ -300,36 +501,74 @@ header
 	flex-wrap: wrap
 	justify-content: space-between
 	width: 100%
-	h2
-		font-size: 48px
-		color: $lightBlue
-		padding: 97px 0 51px 0
-	.cont
-		display: flex
-		flex-direction: row
-		justify-content: space-between
-		.form_block
-			width: 50%
-		img
-			max-width: 700px
-			height: 80%
+	.content1
+		max-width: 1390px
+		@include l-desk
+			max-width: 1300px
+		@include m-desk
+			max-width: 1200px
+		@include sm-desk
+			max-width: 900px	
+		h2
+			font-size: 48px
+			color: $lightBlue
+			padding: 97px 0 51px 0
+			@include l-desk
+				font-size: 45px
+			@include m-desk
+				font-size: 40px	
+			@include sm-desk
+				font-size: 38px		
+		.cont
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			.form_block
+				width: 50%
+			img
+				max-width: 700px
+				height: 80%
+				@include l-desk
+					max-width: 650px
+					height: 90%
+				@include m-desk
+					max-width: 600px
+					height: 90%	
+				@include sm-desk
+					max-width: 450px
+					height: 90%		
 .form_block1
 	display: flex
 	flex-direction: column
 	justify-content: space-between
 	width: 47%
 	max-width: 700px
+	@include l-desk
+		max-width: 650px
+	@include m-desk
+		max-width: 600px	
+	@include sm-desk
+		max-width: 550px	
 	fieldset
 		border: 1.33634px solid #BEBEBE
 		height: 81.52px
 		margin: 0 0 35px 0
-		text-align: center	
+		text-align: center
+		@include l-desk
+			height: 75px	
+		@include m-desk
+			height: 65px
+		@include sm-desk
+			height: 55px	
+			margin: 0 0 20px 0
 		legend
 			color: black
 			font-size: 14.6997px
 			margin-left: 50px
 			font-weight: 550
 			font-size: 14.6997px
+			@include sm-desk
+				font-size: 12px
 		.styleInput
 			border: none					
 			width: 90%
@@ -339,24 +578,40 @@ header
 			color: #D7D7D7
 			font-size: 24.0541px
 			margin: 0					
+			@include l-desk
+				font-size: 20px
+			@include m-desk
+				font-size: 18px	
+			@include sm-desk
+				font-size: 16px
 	button
 		margin: 40px 0 0 0
 		width: 60%
-
-
+		@include l-desk
+			margin: 20px 0 0 0
+		@include m-desk
+			margin: 15px 0 0 0
+		@include sm-desk
+			margin: 10px 0 0 0
 .contacts
-	display: flex
-	flex-direction: column
-	justify-content: space-between
 	width: 50% 	
-	max-width: 1390px
 	height: auto
 	margin: auto
 	text-align: center
-	padding: $padding-top 0 154px 0
+	padding: 130px 0 154px 0
+	@include m-desk
+		width: 60%
+	@include sm-desk
+		width: 80%	
 	h2
 		color: $lightBlue
 		font-size: 64px
+		@include l-desk
+			font-size: 59px
+		@include m-desk
+			font-size: 55px	
+		@include sm-desk
+			font-size: 50px	
 	.mainInfo
 		width: 100%
 		line-height: 46px
@@ -369,27 +624,36 @@ header
 			display: flex
 			font-size: 28px	
 			flex-direction: row
+			@include sm-desk
+				font-size: 22px
 			h3
 				font-size: 30px	
+				@include sm-desk
+					font-size: 23px
 
 footer
 	background-color: $darkBlue
-	padding: 28px 0 !important
-<<<<<<< HEAD
-	// max-width: 1920px
-=======
-	max-width: 1920px
->>>>>>> master
+	padding: 28px 0
+	@include m-desk
+		padding: 22px 0
+	@include sm-desk
+		padding: 18px 0	
 	.four_half_container
 		display: flex
 		flex-direction: row
 		flex-wrap: nowrap
 		width: 85%
 		justify-content: space-between
+		@include l-desk
+			width: 90%
 		.footer_block3
 			padding: 20px 0 !important
 	img
 		margin-top: 48.35px
+		@include sm-desk
+			margin-top: 42px
+			margin-left: 20px
+			width: 90%
 	h3
 		font-size: 18px
 		font-weight: 500
@@ -397,6 +661,10 @@ footer
 	ul
 		li
 			margin-top: 13px
+			@include m-desk
+				margin-top: 10px
+			@include sm-desk
+				margin-top: 6px	
 	a, li
 		font-size: 16px
 		font-weight: 300
@@ -404,5 +672,7 @@ footer
 		color: #fff
 		opacity: .7
 		transition: .4s
+		@include sm-desk
+			font-size: 14px
 		&:hover
 			color: #999999
