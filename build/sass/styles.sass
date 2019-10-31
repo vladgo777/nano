@@ -362,70 +362,103 @@ header
 		margin: auto
 		@include l-desk
 			width: 100%
-		.slider			
+		.slider	
 			.slide
-				position: relative
-				img
-					max-width: 100%
-					height: auto
-				.sliderTxt
-					width: 100%
-					display: flex
-					flex-direction: column
-					text-align: center
-					align-items: center
-					height: auto
-					margin: auto
-					position: absolute
-					color: white
-					top: 20%
-					@include l-desk
-						top: 15%
-					@include m-desk
-						top: 12%
-					@include sm-desk
-						top: 10%	
-					@include tablet
-						top: 8%		
+				display: flex
+				flex-direction: column
+				align-items: center
+				text-align: center
+				margin: auto
+				color: white
+				height: 650px
+				width: 100%
+				box-sizing: border-box
+				padding: 120px 0 0 0
+				background: url(../img/slider/slide1.png) center
+				background-repeat: no-repeat
+				background-size: cover
+				@include m-desk
+					height: 550px	
+				@include sm-desk
+					padding: 100px 0 0 0
+					height: 450px
+				@include tablet
+					padding: 50px 0 0 0
+					height: 650px		
+				@include mobile
+					padding: 30px 0 0 0
+					height: 640px		
+				&.slide2
+					background: url(../img/slider/slide2.png) 
+				&.slide3	
+					background: url(../img/slider/slide3.png)
+				&.slide4	
+					background: url(../img/slider/slide4.png)
+				&.slide5	
+					background: url(../img/slider/slide5.png)
 					@include mobile
-						top: 6%	
-					.txtTop
-						font-size: 14px
-						@include sm-desk
-							font-size: 12px	
-						@include tablet
-							font-size: 10px	
-						@include mobile 
-							font-size: 8px	
-					h2
-						font-size: 82px	
-						padding: 0
-						@include l-desk
-							font-size: 75px
-						@include m-desk
-							font-size: 60px	
-						@include sm-desk
-							font-size: 50px	
-						@include tablet
-							font-size: 35px		
-					.txtLow
-						padding: $padding-top
-						width: 55%
-						font-size: 24px
-						line-height: 29px	
-						@include l-desk
-							font-size: 22px
-						@include m-desk
-							font-size: 20px	
-							padding: 30px
-						@include sm-desk
-							font-size: 18px	
-							padding: 20px	
-						@include tablet
-							font-size: 15px
-							line-height: 20px
-							padding: 5px
-							width: 80%	
+						h2
+							font-size: 45px	
+							line-height: 55px
+				&.slide6	
+					background: url(../img/slider/slide6.png)
+					@include mobile
+						h2
+							font-size: 32px	
+							line-height: 43px	
+				.txtTop
+					font-size: 15px
+					@include sm-desk
+						font-size: 12px	
+					@include tablet
+						font-size: 15px	
+					@include mobile 
+						font-size: 15px	
+				h2
+					font-size: 82px	
+					padding: 0
+					@include l-desk
+						font-size: 75px
+					@include m-desk
+						font-size: 60px	
+					@include sm-desk
+						font-size: 50px	
+					@include tablet
+						font-size: 55px	
+						padding-top: 150px
+						line-height: 66px
+					@include mobile
+						font-size: 55px
+						line-height: 66px
+						padding-top: 100px
+				.txtLow
+					padding: $padding-top
+					width: 55%
+					font-size: 24px
+					line-height: 29px	
+					@include l-desk
+						font-size: 22px
+					@include m-desk
+						font-size: 20px	
+						padding: 30px
+					@include sm-desk
+						font-size: 18px	
+						padding: 20px	
+					@include tablet
+						font-size: 18px
+						width: 85%
+						line-height: 30px
+						padding: 5px
+					@include mobile
+						font-size: 15px	
+						width: 85%
+						line-height: 20px
+						padding: 5px
+				button
+					@include tablet			
+						margin-top: 130px	
+					@include mobile
+						margin-top: 130px	
 		.arrows
 			width: 100%
 			height: 60.41px
@@ -434,11 +467,17 @@ header
 			justify-content: space-between
 			padding-top: 15%
 			z-index: 500	
+			@include l-desk
+				padding-top: 18%
+			@include m-desk
+				padding-top: 18%	
+			@include sm-desk
+				padding-top: 18%	
 			.arrow
 				cursor: pointer
 				width: 60.41px
 				height: 60.41px
-				margin: 0 50.79px 0 50.79px
+				margin: 0 50.79px 
 				img
 					height: 100%
 					width: 100% 
@@ -661,6 +700,8 @@ header
 		width: 80%	
 	@include tablet
 		width: 100%	
+	@include mobile
+		width: 100%	
 	h2
 		color: $lightBlue
 		font-size: 64px
@@ -671,7 +712,9 @@ header
 		@include sm-desk
 			font-size: 50px
 		@include tablet
-			font-size: 45px		
+			font-size: 45px	
+		@include mobile
+			font-size: 55px		
 	.mainInfo
 		width: 100%
 		line-height: 46px
@@ -682,6 +725,8 @@ header
 		justify-content: space-around	
 		@include tablet
 			flex-direction: column
+		@include mobile
+			flex-direction: column	
 		span
 			display: flex
 			font-size: 28px	
@@ -690,12 +735,16 @@ header
 				font-size: 22px
 			@include tablet
 				font-size: 18px	
+			@include mobile
+				font-size: 22px	
 			h3
 				font-size: 30px	
 				@include sm-desk
 					font-size: 23px
 				@include tablet
 					font-size: 18px	
+				@include mobile
+					font-size: 26.1601px	
 
 footer
 	background-color: $darkBlue
@@ -706,10 +755,14 @@ footer
 		padding: 18px 0	
 	@include tablet 
 		padding: 14px 0	
+	@include mobile
+		padding: 12px 0		
 	.content1
 		@include tablet
 			max-width: 1024px
 			margin: 0px
+		@include mobile
+			max-width: 640px	
 		.four_half_container
 			display: flex
 			flex-direction: row
@@ -729,11 +782,26 @@ footer
 						text-align: center
 					&:nth-child(2n)
 						padding: 15px 0 0 0
+			@include mobile
+				flex-direction: column
+				width: 60%
+				margin: auto 
+				.footer_block
+					&:nth-child(1)
+						order: 1
+						width: 100%
+						text-align: center
+					&:nth-child(2)	
+						padding: 30px 0 0 0	
+					&:nth-child(4)	
+						padding: 15px 0 0 0	
 			.footer_block
 				&:nth-child(3)
 					padding: 20px 0 
 					@include tablet
 						padding:  0
+					@include mobile
+						padding:  0	
 		img
 			margin-top: 48.35px
 			@include sm-desk
@@ -742,6 +810,8 @@ footer
 				width: 90%
 			@include tablet
 				margin-top: 52px
+			@include mobile
+				margin-top: 52px	
 		h3
 			font-size: 18px
 			font-weight: 500

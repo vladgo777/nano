@@ -8,7 +8,7 @@ $(document).ready(function(){
 //slider slick
   $('.slider').slick({
   	dots: true,
-  	autoplay: true,
+  	// autoplay: true,
   	slidesToShow: 1,
   	slidesToScroll: 1,
     nextArrow: $('#next'),

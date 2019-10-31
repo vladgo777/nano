@@ -456,88 +456,123 @@ header {
       .advantages .content1 {
         width: 100%; } }
     .advantages .content1 .slider .slide {
-      position: relative; }
-      .advantages .content1 .slider .slide img {
-        max-width: 100%;
-        height: auto; }
-      .advantages .content1 .slider .slide .sliderTxt {
-        width: 100%;
-        display: -webkit-box;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-                flex-direction: column;
-        text-align: center;
-        -webkit-box-align: center;
-                align-items: center;
-        height: auto;
-        margin: auto;
-        position: absolute;
-        color: white;
-        top: 20%; }
-        @media screen and (min-width: 1550px) and (max-width: 1828px) {
-          .advantages .content1 .slider .slide .sliderTxt {
-            top: 15%; } }
-        @media screen and (min-width: 1281px) and (max-width: 1550px) {
-          .advantages .content1 .slider .slide .sliderTxt {
-            top: 12%; } }
-        @media screen and (min-width: 1025px) and (max-width: 1280px) {
-          .advantages .content1 .slider .slide .sliderTxt {
-            top: 10%; } }
-        @media screen and (min-width: 641px) and (max-width: 1024px) {
-          .advantages .content1 .slider .slide .sliderTxt {
-            top: 8%; } }
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column;
+      -webkit-box-align: center;
+              align-items: center;
+      text-align: center;
+      margin: auto;
+      color: white;
+      height: 650px;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 120px 0 0 0;
+      background: url(../img/slider/slide1.png) center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      @media screen and (min-width: 1281px) and (max-width: 1550px) {
+        .advantages .content1 .slider .slide {
+          height: 550px; } }
+      @media screen and (min-width: 1025px) and (max-width: 1280px) {
+        .advantages .content1 .slider .slide {
+          padding: 100px 0 0 0;
+          height: 450px; } }
+      @media screen and (min-width: 641px) and (max-width: 1024px) {
+        .advantages .content1 .slider .slide {
+          padding: 50px 0 0 0;
+          height: 650px; } }
+      @media screen and (min-width: 300px) and (max-width: 640px) {
+        .advantages .content1 .slider .slide {
+          padding: 30px 0 0 0;
+          height: 640px; } }
+      .advantages .content1 .slider .slide.slide2 {
+        background: url(../img/slider/slide2.png); }
+      .advantages .content1 .slider .slide.slide3 {
+        background: url(../img/slider/slide3.png); }
+      .advantages .content1 .slider .slide.slide4 {
+        background: url(../img/slider/slide4.png); }
+      .advantages .content1 .slider .slide.slide5 {
+        background: url(../img/slider/slide5.png); }
         @media screen and (min-width: 300px) and (max-width: 640px) {
-          .advantages .content1 .slider .slide .sliderTxt {
-            top: 6%; } }
-        .advantages .content1 .slider .slide .sliderTxt .txtTop {
-          font-size: 14px; }
-          @media screen and (min-width: 1025px) and (max-width: 1280px) {
-            .advantages .content1 .slider .slide .sliderTxt .txtTop {
-              font-size: 12px; } }
-          @media screen and (min-width: 641px) and (max-width: 1024px) {
-            .advantages .content1 .slider .slide .sliderTxt .txtTop {
-              font-size: 10px; } }
-          @media screen and (min-width: 300px) and (max-width: 640px) {
-            .advantages .content1 .slider .slide .sliderTxt .txtTop {
-              font-size: 8px; } }
-        .advantages .content1 .slider .slide .sliderTxt h2 {
-          font-size: 82px;
-          padding: 0; }
-          @media screen and (min-width: 1550px) and (max-width: 1828px) {
-            .advantages .content1 .slider .slide .sliderTxt h2 {
-              font-size: 75px; } }
-          @media screen and (min-width: 1281px) and (max-width: 1550px) {
-            .advantages .content1 .slider .slide .sliderTxt h2 {
-              font-size: 60px; } }
-          @media screen and (min-width: 1025px) and (max-width: 1280px) {
-            .advantages .content1 .slider .slide .sliderTxt h2 {
-              font-size: 50px; } }
-          @media screen and (min-width: 641px) and (max-width: 1024px) {
-            .advantages .content1 .slider .slide .sliderTxt h2 {
-              font-size: 35px; } }
-        .advantages .content1 .slider .slide .sliderTxt .txtLow {
-          padding: 60px;
-          width: 55%;
-          font-size: 24px;
-          line-height: 29px; }
-          @media screen and (min-width: 1550px) and (max-width: 1828px) {
-            .advantages .content1 .slider .slide .sliderTxt .txtLow {
-              font-size: 22px; } }
-          @media screen and (min-width: 1281px) and (max-width: 1550px) {
-            .advantages .content1 .slider .slide .sliderTxt .txtLow {
-              font-size: 20px;
-              padding: 30px; } }
-          @media screen and (min-width: 1025px) and (max-width: 1280px) {
-            .advantages .content1 .slider .slide .sliderTxt .txtLow {
-              font-size: 18px;
-              padding: 20px; } }
-          @media screen and (min-width: 641px) and (max-width: 1024px) {
-            .advantages .content1 .slider .slide .sliderTxt .txtLow {
-              font-size: 15px;
-              line-height: 20px;
-              padding: 5px;
-              width: 80%; } }
+          .advantages .content1 .slider .slide.slide5 h2 {
+            font-size: 45px;
+            line-height: 55px; } }
+      .advantages .content1 .slider .slide.slide6 {
+        background: url(../img/slider/slide6.png); }
+        @media screen and (min-width: 300px) and (max-width: 640px) {
+          .advantages .content1 .slider .slide.slide6 h2 {
+            font-size: 32px;
+            line-height: 43px; } }
+      .advantages .content1 .slider .slide .txtTop {
+        font-size: 15px; }
+        @media screen and (min-width: 1025px) and (max-width: 1280px) {
+          .advantages .content1 .slider .slide .txtTop {
+            font-size: 12px; } }
+        @media screen and (min-width: 641px) and (max-width: 1024px) {
+          .advantages .content1 .slider .slide .txtTop {
+            font-size: 15px; } }
+        @media screen and (min-width: 300px) and (max-width: 640px) {
+          .advantages .content1 .slider .slide .txtTop {
+            font-size: 15px; } }
+      .advantages .content1 .slider .slide h2 {
+        font-size: 82px;
+        padding: 0; }
+        @media screen and (min-width: 1550px) and (max-width: 1828px) {
+          .advantages .content1 .slider .slide h2 {
+            font-size: 75px; } }
+        @media screen and (min-width: 1281px) and (max-width: 1550px) {
+          .advantages .content1 .slider .slide h2 {
+            font-size: 60px; } }
+        @media screen and (min-width: 1025px) and (max-width: 1280px) {
+          .advantages .content1 .slider .slide h2 {
+            font-size: 50px; } }
+        @media screen and (min-width: 641px) and (max-width: 1024px) {
+          .advantages .content1 .slider .slide h2 {
+            font-size: 55px;
+            padding-top: 150px;
+            line-height: 66px; } }
+        @media screen and (min-width: 300px) and (max-width: 640px) {
+          .advantages .content1 .slider .slide h2 {
+            font-size: 55px;
+            line-height: 66px;
+            padding-top: 100px; } }
+      .advantages .content1 .slider .slide .txtLow {
+        padding: 60px;
+        width: 55%;
+        font-size: 24px;
+        line-height: 29px; }
+        @media screen and (min-width: 1550px) and (max-width: 1828px) {
+          .advantages .content1 .slider .slide .txtLow {
+            font-size: 22px; } }
+        @media screen and (min-width: 1281px) and (max-width: 1550px) {
+          .advantages .content1 .slider .slide .txtLow {
+            font-size: 20px;
+            padding: 30px; } }
+        @media screen and (min-width: 1025px) and (max-width: 1280px) {
+          .advantages .content1 .slider .slide .txtLow {
+            font-size: 18px;
+            padding: 20px; } }
+        @media screen and (min-width: 641px) and (max-width: 1024px) {
+          .advantages .content1 .slider .slide .txtLow {
+            font-size: 18px;
+            width: 85%;
+            line-height: 30px;
+            padding: 5px; } }
+        @media screen and (min-width: 300px) and (max-width: 640px) {
+          .advantages .content1 .slider .slide .txtLow {
+            font-size: 15px;
+            width: 85%;
+            line-height: 20px;
+            padding: 5px; } }
+      @media screen and (min-width: 641px) and (max-width: 1024px) {
+        .advantages .content1 .slider .slide button {
+          margin-top: 130px; } }
+      @media screen and (min-width: 300px) and (max-width: 640px) {
+        .advantages .content1 .slider .slide button {
+          margin-top: 130px; } }
     .advantages .content1 .arrows {
       width: 100%;
       height: 60.41px;
@@ -548,11 +583,20 @@ header {
               justify-content: space-between;
       padding-top: 15%;
       z-index: 500; }
+      @media screen and (min-width: 1550px) and (max-width: 1828px) {
+        .advantages .content1 .arrows {
+          padding-top: 18%; } }
+      @media screen and (min-width: 1281px) and (max-width: 1550px) {
+        .advantages .content1 .arrows {
+          padding-top: 18%; } }
+      @media screen and (min-width: 1025px) and (max-width: 1280px) {
+        .advantages .content1 .arrows {
+          padding-top: 18%; } }
       .advantages .content1 .arrows .arrow {
         cursor: pointer;
         width: 60.41px;
         height: 60.41px;
-        margin: 0 50.79px 0 50.79px; }
+        margin: 0 50.79px; }
         .advantages .content1 .arrows .arrow img {
           height: 100%;
           width: 100%; }
@@ -852,6 +896,9 @@ header {
   @media screen and (min-width: 641px) and (max-width: 1024px) {
     .contacts {
       width: 100%; } }
+  @media screen and (min-width: 300px) and (max-width: 640px) {
+    .contacts {
+      width: 100%; } }
   .contacts h2 {
     color: #2857B4;
     font-size: 64px; }
@@ -867,6 +914,9 @@ header {
     @media screen and (min-width: 641px) and (max-width: 1024px) {
       .contacts h2 {
         font-size: 45px; } }
+    @media screen and (min-width: 300px) and (max-width: 640px) {
+      .contacts h2 {
+        font-size: 55px; } }
   .contacts .mainInfo {
     width: 100%;
     line-height: 46px;
@@ -884,6 +934,11 @@ header {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
                 flex-direction: column; } }
+    @media screen and (min-width: 300px) and (max-width: 640px) {
+      .contacts .mainInfo {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column; } }
     .contacts .mainInfo span {
       display: -webkit-box;
       display: flex;
@@ -897,6 +952,9 @@ header {
       @media screen and (min-width: 641px) and (max-width: 1024px) {
         .contacts .mainInfo span {
           font-size: 18px; } }
+      @media screen and (min-width: 300px) and (max-width: 640px) {
+        .contacts .mainInfo span {
+          font-size: 22px; } }
       .contacts .mainInfo span h3 {
         font-size: 30px; }
         @media screen and (min-width: 1025px) and (max-width: 1280px) {
@@ -905,6 +963,9 @@ header {
         @media screen and (min-width: 641px) and (max-width: 1024px) {
           .contacts .mainInfo span h3 {
             font-size: 18px; } }
+        @media screen and (min-width: 300px) and (max-width: 640px) {
+          .contacts .mainInfo span h3 {
+            font-size: 26.1601px; } }
 
 footer {
   background-color: #08142C;
@@ -918,10 +979,16 @@ footer {
   @media screen and (min-width: 641px) and (max-width: 1024px) {
     footer {
       padding: 14px 0; } }
+  @media screen and (min-width: 300px) and (max-width: 640px) {
+    footer {
+      padding: 12px 0; } }
   @media screen and (min-width: 641px) and (max-width: 1024px) {
     footer .content1 {
       max-width: 1024px;
       margin: 0px; } }
+  @media screen and (min-width: 300px) and (max-width: 640px) {
+    footer .content1 {
+      max-width: 640px; } }
   footer .content1 .four_half_container {
     display: -webkit-box;
     display: flex;
@@ -949,9 +1016,28 @@ footer {
           text-align: center; }
         footer .content1 .four_half_container .footer_block:nth-child(2n) {
           padding: 15px 0 0 0; } }
+    @media screen and (min-width: 300px) and (max-width: 640px) {
+      footer .content1 .four_half_container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        width: 60%;
+        margin: auto; }
+        footer .content1 .four_half_container .footer_block:nth-child(1) {
+          -webkit-box-ordinal-group: 2;
+                  order: 1;
+          width: 100%;
+          text-align: center; }
+        footer .content1 .four_half_container .footer_block:nth-child(2) {
+          padding: 30px 0 0 0; }
+        footer .content1 .four_half_container .footer_block:nth-child(4) {
+          padding: 15px 0 0 0; } }
     footer .content1 .four_half_container .footer_block:nth-child(3) {
       padding: 20px 0; }
       @media screen and (min-width: 641px) and (max-width: 1024px) {
+        footer .content1 .four_half_container .footer_block:nth-child(3) {
+          padding: 0; } }
+      @media screen and (min-width: 300px) and (max-width: 640px) {
         footer .content1 .four_half_container .footer_block:nth-child(3) {
           padding: 0; } }
   footer .content1 img {
@@ -962,6 +1048,9 @@ footer {
         margin-left: 20px;
         width: 90%; } }
     @media screen and (min-width: 641px) and (max-width: 1024px) {
+      footer .content1 img {
+        margin-top: 52px; } }
+    @media screen and (min-width: 300px) and (max-width: 640px) {
       footer .content1 img {
         margin-top: 52px; } }
   footer .content1 h3 {
