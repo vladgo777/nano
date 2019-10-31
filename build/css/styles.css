@@ -600,7 +600,7 @@ header {
         max-width: 900px; } }
     @media screen and (min-width: 641px) and (max-width: 1024px) {
       .price .content1 {
-        max-width: 700px; } }
+        max-width: 1024px; } }
     .price .content1 h2 {
       font-size: 48px;
       color: #2857B4;
@@ -822,7 +822,8 @@ footer {
       padding: 14px 0; } }
   @media screen and (min-width: 641px) and (max-width: 1024px) {
     footer .content1 {
-      max-width: 650px; } }
+      max-width: 1024px;
+      margin: 0px; } }
   footer .content1 .four_half_container {
     display: -webkit-box;
     display: flex;
@@ -841,17 +842,20 @@ footer {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
                 flex-direction: column;
-        -webkit-box-align: center;
-                align-items: center;
-        width: 95%; }
-        footer .content1 .four_half_container .footer_block1 {
+        width: 90%;
+        margin: auto; }
+        footer .content1 .four_half_container .footer_block:nth-child(1) {
           -webkit-box-ordinal-group: 2;
-                  order: 1; } }
-    footer .content1 .four_half_container .footer_block3 {
+                  order: 1;
+          width: 100%;
+          text-align: center; }
+        footer .content1 .four_half_container .footer_block:nth-child(2n) {
+          padding: 15px 0 0 0; } }
+    footer .content1 .four_half_container .footer_block:nth-child(3) {
       padding: 20px 0; }
       @media screen and (min-width: 641px) and (max-width: 1024px) {
-        footer .content1 .four_half_container .footer_block3 {
-          padding: 5px 0; } }
+        footer .content1 .four_half_container .footer_block:nth-child(3) {
+          padding: 0; } }
   footer .content1 img {
     margin-top: 48.35px; }
     @media screen and (min-width: 1025px) and (max-width: 1280px) {
@@ -861,9 +865,7 @@ footer {
         width: 90%; } }
     @media screen and (min-width: 641px) and (max-width: 1024px) {
       footer .content1 img {
-        margin-top: 52px;
-        margin-left: auto;
-        width: 90%; } }
+        margin-top: 52px; } }
   footer .content1 h3 {
     font-size: 18px;
     font-weight: 500;

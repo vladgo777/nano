@@ -476,7 +476,7 @@ header
 		@include sm-desk
 			max-width: 900px
 		@include tablet
-			max-width: 700px		
+			max-width: 1024px		
 		h2
 			font-size: 48px
 			color: $lightBlue
@@ -638,7 +638,8 @@ footer
 		padding: 14px 0	
 	.content1
 		@include tablet
-			max-width: 650px
+			max-width: 1024px
+			margin: 0px
 		.four_half_container
 			display: flex
 			flex-direction: row
@@ -649,14 +650,20 @@ footer
 				width: 90%
 			@include tablet
 				flex-direction: column
-				align-items: center
-				width: 95%
-				.footer_block1
-					order: 1
-			.footer_block3
-				padding: 20px 0 
-				@include tablet
-					padding: 5px 0
+				width: 90%
+				margin: auto
+				.footer_block
+					&:nth-child(1)
+						order: 1
+						width: 100%
+						text-align: center
+					&:nth-child(2n)
+						padding: 15px 0 0 0
+			.footer_block
+				&:nth-child(3)
+					padding: 20px 0 
+					@include tablet
+						padding:  0
 		img
 			margin-top: 48.35px
 			@include sm-desk
@@ -665,8 +672,6 @@ footer
 				width: 90%
 			@include tablet
 				margin-top: 52px
-				margin-left: auto
-				width: 90%	
 		h3
 			font-size: 18px
 			font-weight: 500
