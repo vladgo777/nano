@@ -292,7 +292,7 @@ header {
           font-size: 27px; } }
       @media screen and (min-width: 641px) and (max-width: 1024px) {
         .intro .content1 .txtIntro h2 {
-          font-size: 24px; } }
+          font-size: 25px; } }
     .intro .content1 .txtIntro p {
       font-size: 18px;
       color: #282828;
@@ -302,7 +302,7 @@ header {
           font-size: 15px; } }
       @media screen and (min-width: 641px) and (max-width: 1024px) {
         .intro .content1 .txtIntro p {
-          font-size: 13px; } }
+          font-size: 16px; } }
     .intro .content1 .txtIntro span {
       font-size: 12px;
       color: #828282;
@@ -328,7 +328,7 @@ header {
         font-size: 27px; } }
     @media screen and (min-width: 641px) and (max-width: 1024px) {
       .steps .content1 h2 {
-        font-size: 24px; } }
+        font-size: 25px; } }
   .steps .content1 .steps_block {
     display: -webkit-box;
     display: flex;
@@ -345,7 +345,7 @@ header {
         margin: 55px auto; } }
     @media screen and (min-width: 641px) and (max-width: 1024px) {
       .steps .content1 .steps_block {
-        width: 90%;
+        width: 95%;
         margin: 55px auto; } }
     .steps .content1 .steps_block img {
       width: 900px; }
@@ -355,6 +355,9 @@ header {
       padding: 15px 0 0 0;
       -webkit-box-align: center;
               align-items: center; }
+      @media screen and (min-width: 641px) and (max-width: 1024px) {
+        .steps .content1 .steps_block .step-el {
+          width: 50%; } }
       .steps .content1 .steps_block .step-el p {
         margin-top: 20px;
         font-size: 18px;
@@ -364,11 +367,17 @@ header {
             font-size: 15px; } }
         @media screen and (min-width: 641px) and (max-width: 1024px) {
           .steps .content1 .steps_block .step-el p {
-            font-size: 10px; } }
+            font-size: 16px; } }
       .steps .content1 .steps_block .step-el img {
         width: 18%; }
+        @media screen and (min-width: 641px) and (max-width: 1024px) {
+          .steps .content1 .steps_block .step-el img {
+            width: 25%; } }
     .steps .content1 .steps_block .step-el1 {
       width: 33%; }
+      @media screen and (min-width: 641px) and (max-width: 1024px) {
+        .steps .content1 .steps_block .step-el1 {
+          width: 50%; } }
       .steps .content1 .steps_block .step-el1:nth-child(4), .steps .content1 .steps_block .step-el1:nth-child(5), .steps .content1 .steps_block .step-el1:nth-child(6) {
         padding: 60px 0 0 0; }
         @media screen and (min-width: 1025px) and (max-width: 1280px) {
@@ -575,6 +584,9 @@ header {
   -webkit-box-pack: justify;
           justify-content: space-between;
   width: 100%; }
+  @media screen and (min-width: 641px) and (max-width: 1024px) {
+    .price {
+      text-align: center; } }
   .price .content1 {
     max-width: 1390px; }
     @media screen and (min-width: 1550px) and (max-width: 1828px) {
@@ -675,6 +687,7 @@ header {
     @media screen and (min-width: 641px) and (max-width: 1024px) {
       .form_block1 fieldset {
         height: 55px;
+        width: auto;
         margin: 0 0 20px 0; } }
     .form_block1 fieldset legend {
       color: black;
@@ -738,6 +751,9 @@ header {
   @media screen and (min-width: 1025px) and (max-width: 1280px) {
     .contacts {
       width: 80%; } }
+  @media screen and (min-width: 641px) and (max-width: 1024px) {
+    .contacts {
+      width: 100%; } }
   .contacts h2 {
     color: #2857B4;
     font-size: 64px; }
@@ -750,6 +766,9 @@ header {
     @media screen and (min-width: 1025px) and (max-width: 1280px) {
       .contacts h2 {
         font-size: 50px; } }
+    @media screen and (min-width: 641px) and (max-width: 1024px) {
+      .contacts h2 {
+        font-size: 45px; } }
   .contacts .mainInfo {
     width: 100%;
     line-height: 46px;
@@ -762,6 +781,11 @@ header {
     -webkit-box-direction: normal;
             flex-direction: row;
     justify-content: space-around; }
+    @media screen and (min-width: 641px) and (max-width: 1024px) {
+      .contacts .mainInfo {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column; } }
     .contacts .mainInfo span {
       display: -webkit-box;
       display: flex;
@@ -772,11 +796,17 @@ header {
       @media screen and (min-width: 1025px) and (max-width: 1280px) {
         .contacts .mainInfo span {
           font-size: 22px; } }
+      @media screen and (min-width: 641px) and (max-width: 1024px) {
+        .contacts .mainInfo span {
+          font-size: 18px; } }
       .contacts .mainInfo span h3 {
         font-size: 30px; }
         @media screen and (min-width: 1025px) and (max-width: 1280px) {
           .contacts .mainInfo span h3 {
             font-size: 23px; } }
+        @media screen and (min-width: 641px) and (max-width: 1024px) {
+          .contacts .mainInfo span h3 {
+            font-size: 18px; } }
 
 footer {
   background-color: #08142C;
@@ -787,7 +817,13 @@ footer {
   @media screen and (min-width: 1025px) and (max-width: 1280px) {
     footer {
       padding: 18px 0; } }
-  footer .four_half_container {
+  @media screen and (min-width: 641px) and (max-width: 1024px) {
+    footer {
+      padding: 14px 0; } }
+  @media screen and (min-width: 641px) and (max-width: 1024px) {
+    footer .content1 {
+      max-width: 650px; } }
+  footer .content1 .four_half_container {
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: horizontal;
@@ -798,30 +834,49 @@ footer {
     -webkit-box-pack: justify;
             justify-content: space-between; }
     @media screen and (min-width: 1550px) and (max-width: 1828px) {
-      footer .four_half_container {
+      footer .content1 .four_half_container {
         width: 90%; } }
-    footer .four_half_container .footer_block3 {
-      padding: 20px 0 !important; }
-  footer img {
+    @media screen and (min-width: 641px) and (max-width: 1024px) {
+      footer .content1 .four_half_container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        -webkit-box-align: center;
+                align-items: center;
+        width: 95%; }
+        footer .content1 .four_half_container .footer_block1 {
+          -webkit-box-ordinal-group: 2;
+                  order: 1; } }
+    footer .content1 .four_half_container .footer_block3 {
+      padding: 20px 0; }
+      @media screen and (min-width: 641px) and (max-width: 1024px) {
+        footer .content1 .four_half_container .footer_block3 {
+          padding: 5px 0; } }
+  footer .content1 img {
     margin-top: 48.35px; }
     @media screen and (min-width: 1025px) and (max-width: 1280px) {
-      footer img {
+      footer .content1 img {
         margin-top: 42px;
         margin-left: 20px;
         width: 90%; } }
-  footer h3 {
+    @media screen and (min-width: 641px) and (max-width: 1024px) {
+      footer .content1 img {
+        margin-top: 52px;
+        margin-left: auto;
+        width: 90%; } }
+  footer .content1 h3 {
     font-size: 18px;
     font-weight: 500;
     color: #fff; }
-  footer ul li {
+  footer .content1 ul li {
     margin-top: 13px; }
     @media screen and (min-width: 1281px) and (max-width: 1550px) {
-      footer ul li {
+      footer .content1 ul li {
         margin-top: 10px; } }
     @media screen and (min-width: 1025px) and (max-width: 1280px) {
-      footer ul li {
+      footer .content1 ul li {
         margin-top: 6px; } }
-  footer a, footer li {
+  footer .content1 a, footer .content1 li {
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
@@ -830,7 +885,7 @@ footer {
     -webkit-transition: .4s;
     transition: .4s; }
     @media screen and (min-width: 1025px) and (max-width: 1280px) {
-      footer a, footer li {
+      footer .content1 a, footer .content1 li {
         font-size: 14px; } }
-    footer a:hover, footer li:hover {
+    footer .content1 a:hover, footer .content1 li:hover {
       color: #999999; }

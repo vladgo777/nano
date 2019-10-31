@@ -237,7 +237,7 @@ header
 				@include sm-desk
 					font-size: 27px
 				@include tablet
-					font-size: 24px	
+					font-size: 25px	
 			p
 				font-size: 18px
 				color: #282828
@@ -245,7 +245,7 @@ header
 				@include sm-desk
 					font-size: 15px
 				@include tablet
-					font-size: 13px	
+					font-size: 16px	
 			span
 				font-size: 12px
 				color: #828282		
@@ -266,7 +266,7 @@ header
 			@include sm-desk
 				font-size: 27px
 			@include tablet
-				font-size: 24px	
+				font-size: 25px	
 		.steps_block
 			display: flex
 			justify-content: center
@@ -278,7 +278,7 @@ header
 				width: 90%
 				margin: 55px auto
 			@include tablet
-				width: 90%
+				width: 95%
 				margin: 55px auto	
 			img
 				width: 900px
@@ -287,6 +287,8 @@ header
 				text-align: center
 				padding: 15px 0 0 0
 				align-items: center
+				@include tablet
+					width: 50%
 				p
 					margin-top: 20px
 					font-size: 18px
@@ -294,11 +296,15 @@ header
 					@include sm-desk
 						font-size: 15px
 					@include tablet
-						font-size: 10px	
+						font-size: 16px	
 				img
 					width: 18%
+					@include tablet 
+						width: 25%
 			.step-el1
 				width: 33%
+				@include tablet
+					width: 50%
 				&:nth-child(4), &:nth-child(5), &:nth-child(6)
 					padding: $padding-top 0 0 0 
 					@include sm-desk
@@ -459,6 +465,8 @@ header
 	flex-wrap: wrap
 	justify-content: space-between
 	width: 100%
+	@include tablet
+		text-align: center
 	.content1
 		max-width: 1390px
 		@include l-desk
@@ -530,6 +538,7 @@ header
 			margin: 0 0 20px 0
 		@include tablet
 			height: 55px
+			width: auto
 			margin: 0 0 20px 0	
 		legend
 			color: black
@@ -580,6 +589,8 @@ header
 		width: 60%
 	@include sm-desk
 		width: 80%	
+	@include tablet
+		width: 100%	
 	h2
 		color: $lightBlue
 		font-size: 64px
@@ -588,7 +599,9 @@ header
 		@include m-desk
 			font-size: 55px	
 		@include sm-desk
-			font-size: 50px	
+			font-size: 50px
+		@include tablet
+			font-size: 45px		
 	.mainInfo
 		width: 100%
 		line-height: 46px
@@ -597,16 +610,22 @@ header
 		flex-wrap: wrap
 		flex-direction: row
 		justify-content: space-around	
+		@include tablet
+			flex-direction: column
 		span
 			display: flex
 			font-size: 28px	
 			flex-direction: row
 			@include sm-desk
 				font-size: 22px
+			@include tablet
+				font-size: 18px	
 			h3
 				font-size: 30px	
 				@include sm-desk
 					font-size: 23px
+				@include tablet
+					font-size: 18px	
 
 footer
 	background-color: $darkBlue
@@ -615,41 +634,58 @@ footer
 		padding: 22px 0
 	@include sm-desk
 		padding: 18px 0	
-	.four_half_container
-		display: flex
-		flex-direction: row
-		flex-wrap: nowrap
-		width: 85%
-		justify-content: space-between
-		@include l-desk
-			width: 90%
-		.footer_block3
-			padding: 20px 0 !important
-	img
-		margin-top: 48.35px
-		@include sm-desk
-			margin-top: 42px
-			margin-left: 20px
-			width: 90%
-	h3
-		font-size: 18px
-		font-weight: 500
-		color: #fff
-	ul
-		li
-			margin-top: 13px
-			@include m-desk
-				margin-top: 10px
+	@include tablet 
+		padding: 14px 0	
+	.content1
+		@include tablet
+			max-width: 650px
+		.four_half_container
+			display: flex
+			flex-direction: row
+			flex-wrap: nowrap
+			width: 85%
+			justify-content: space-between
+			@include l-desk
+				width: 90%
+			@include tablet
+				flex-direction: column
+				align-items: center
+				width: 95%
+				.footer_block1
+					order: 1
+			.footer_block3
+				padding: 20px 0 
+				@include tablet
+					padding: 5px 0
+		img
+			margin-top: 48.35px
 			@include sm-desk
-				margin-top: 6px	
-	a, li
-		font-size: 16px
-		font-weight: 300
-		line-height: 24px
-		color: #fff
-		opacity: .7
-		transition: .4s
-		@include sm-desk
-			font-size: 14px
-		&:hover
-			color: #999999
+				margin-top: 42px
+				margin-left: 20px
+				width: 90%
+			@include tablet
+				margin-top: 52px
+				margin-left: auto
+				width: 90%	
+		h3
+			font-size: 18px
+			font-weight: 500
+			color: #fff
+		ul
+			li
+				margin-top: 13px
+				@include m-desk
+					margin-top: 10px
+				@include sm-desk
+					margin-top: 6px	
+		a, li
+			font-size: 16px
+			font-weight: 300
+			line-height: 24px
+			color: #fff
+			opacity: .7
+			transition: .4s
+			@include sm-desk
+				font-size: 14px
+			&:hover
+				color: #999999
