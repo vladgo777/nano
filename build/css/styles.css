@@ -66,8 +66,7 @@ strong {
       max-width: 700px; } }
   @media screen and (min-width: 300px) and (max-width: 640px) {
     .content1 {
-      padding: 0 20px;
-      box-sizing: border-box; } }
+      max-width: 700px; } }
 
 .order {
   background-color: #2857B4;
@@ -92,7 +91,12 @@ strong {
       height: 45px; } }
   @media screen and (min-width: 641px) and (max-width: 1024px) {
     .order {
-      font-size: 16px;
+      font-size: 20px;
+      width: 180px;
+      height: 40px; } }
+  @media screen and (min-width: 300px) and (max-width: 640px) {
+    .order {
+      font-size: 20px;
       width: 180px;
       height: 40px; } }
 
@@ -211,6 +215,10 @@ header {
     .intro .content1 {
       width: 100%;
       max-width: 1200px; } }
+  @media screen and (min-width: 300px) and (max-width: 640px) {
+    .intro .content1 {
+      width: 100%;
+      max-width: 1200px; } }
   .intro .content1 .imgIntro {
     width: 90%;
     max-width: 1704px;
@@ -232,9 +240,15 @@ header {
     @media screen and (min-width: 641px) and (max-width: 1024px) {
       .intro .content1 .imgIntro {
         width: 100%; } }
+    @media screen and (min-width: 300px) and (max-width: 640px) {
+      .intro .content1 .imgIntro {
+        width: 100%; } }
     .intro .content1 .imgIntro img {
       padding-top: 60px;
       width: 20%; }
+      @media screen and (min-width: 300px) and (max-width: 640px) {
+        .intro .content1 .imgIntro img {
+          width: 60%; } }
     .intro .content1 .imgIntro h1 {
       font-size: 81.7955px;
       line-height: 98px; }
@@ -250,6 +264,10 @@ header {
       @media screen and (min-width: 641px) and (max-width: 1024px) {
         .intro .content1 .imgIntro h1 {
           font-size: 40px; } }
+      @media screen and (min-width: 300px) and (max-width: 640px) {
+        .intro .content1 .imgIntro h1 {
+          font-size: 55px;
+          line-height: 66px; } }
     .intro .content1 .imgIntro h2 {
       font-size: 36.7083px;
       font-weight: 100;
@@ -266,6 +284,9 @@ header {
       @media screen and (min-width: 641px) and (max-width: 1024px) {
         .intro .content1 .imgIntro h2 {
           font-size: 20px; } }
+      @media screen and (min-width: 300px) and (max-width: 640px) {
+        .intro .content1 .imgIntro h2 {
+          font-size: 16px; } }
   .intro .content1 .txtIntro {
     padding: 100px 0 0 0;
     display: -webkit-box;
@@ -284,6 +305,10 @@ header {
       .intro .content1 .txtIntro {
         width: 90%;
         margin: auto; } }
+    @media screen and (min-width: 300px) and (max-width: 640px) {
+      .intro .content1 .txtIntro {
+        width: 90%;
+        margin: auto; } }
     .intro .content1 .txtIntro h2 {
       font-size: 30px;
       color: #000000; }
@@ -291,6 +316,9 @@ header {
         .intro .content1 .txtIntro h2 {
           font-size: 27px; } }
       @media screen and (min-width: 641px) and (max-width: 1024px) {
+        .intro .content1 .txtIntro h2 {
+          font-size: 25px; } }
+      @media screen and (min-width: 300px) and (max-width: 640px) {
         .intro .content1 .txtIntro h2 {
           font-size: 25px; } }
     .intro .content1 .txtIntro p {
@@ -303,10 +331,18 @@ header {
       @media screen and (min-width: 641px) and (max-width: 1024px) {
         .intro .content1 .txtIntro p {
           font-size: 16px; } }
+      @media screen and (min-width: 300px) and (max-width: 640px) {
+        .intro .content1 .txtIntro p {
+          font-size: 15px;
+          line-height: 18px; } }
     .intro .content1 .txtIntro span {
       font-size: 12px;
       color: #828282;
       padding: 17px 0 0 0; }
+      @media screen and (min-width: 300px) and (max-width: 640px) {
+        .intro .content1 .txtIntro span {
+          font-size: 10px;
+          line-height: 12px; } }
 
 .steps {
   display: -webkit-box;
@@ -329,6 +365,9 @@ header {
     @media screen and (min-width: 641px) and (max-width: 1024px) {
       .steps .content1 h2 {
         font-size: 25px; } }
+    @media screen and (min-width: 300px) and (max-width: 640px) {
+      .steps .content1 h2 {
+        font-size: 20px; } }
   .steps .content1 .steps_block {
     display: -webkit-box;
     display: flex;
@@ -347,6 +386,10 @@ header {
       .steps .content1 .steps_block {
         width: 95%;
         margin: 55px auto; } }
+    @media screen and (min-width: 300px) and (max-width: 640px) {
+      .steps .content1 .steps_block {
+        width: 95%;
+        margin: 55px auto; } }
     .steps .content1 .steps_block img {
       width: 900px; }
     .steps .content1 .steps_block .step-el {
@@ -358,6 +401,9 @@ header {
       @media screen and (min-width: 641px) and (max-width: 1024px) {
         .steps .content1 .steps_block .step-el {
           width: 50%; } }
+      @media screen and (min-width: 300px) and (max-width: 640px) {
+        .steps .content1 .steps_block .step-el {
+          width: 90%; } }
       .steps .content1 .steps_block .step-el p {
         margin-top: 20px;
         font-size: 18px;
@@ -368,16 +414,26 @@ header {
         @media screen and (min-width: 641px) and (max-width: 1024px) {
           .steps .content1 .steps_block .step-el p {
             font-size: 16px; } }
+        @media screen and (min-width: 300px) and (max-width: 640px) {
+          .steps .content1 .steps_block .step-el p {
+            font-size: 14px;
+            line-height: 17px; } }
       .steps .content1 .steps_block .step-el img {
         width: 18%; }
         @media screen and (min-width: 641px) and (max-width: 1024px) {
           .steps .content1 .steps_block .step-el img {
             width: 25%; } }
+        @media screen and (min-width: 300px) and (max-width: 640px) {
+          .steps .content1 .steps_block .step-el img {
+            width: 30%; } }
     .steps .content1 .steps_block .step-el1 {
       width: 33%; }
       @media screen and (min-width: 641px) and (max-width: 1024px) {
         .steps .content1 .steps_block .step-el1 {
           width: 50%; } }
+      @media screen and (min-width: 300px) and (max-width: 640px) {
+        .steps .content1 .steps_block .step-el1 {
+          width: 90%; } }
       .steps .content1 .steps_block .step-el1:nth-child(4), .steps .content1 .steps_block .step-el1:nth-child(5), .steps .content1 .steps_block .step-el1:nth-child(6) {
         padding: 60px 0 0 0; }
         @media screen and (min-width: 1025px) and (max-width: 1280px) {
@@ -386,6 +442,9 @@ header {
         @media screen and (min-width: 641px) and (max-width: 1024px) {
           .steps .content1 .steps_block .step-el1:nth-child(4), .steps .content1 .steps_block .step-el1:nth-child(5), .steps .content1 .steps_block .step-el1:nth-child(6) {
             padding: 40px 0 0 0; } }
+        @media screen and (min-width: 300px) and (max-width: 640px) {
+          .steps .content1 .steps_block .step-el1:nth-child(4), .steps .content1 .steps_block .step-el1:nth-child(5), .steps .content1 .steps_block .step-el1:nth-child(6) {
+            padding: 30px 0 0 0; } }
 
 .advantages {
   padding: 60px 0 0 0; }
@@ -428,6 +487,9 @@ header {
         @media screen and (min-width: 641px) and (max-width: 1024px) {
           .advantages .content1 .slider .slide .sliderTxt {
             top: 8%; } }
+        @media screen and (min-width: 300px) and (max-width: 640px) {
+          .advantages .content1 .slider .slide .sliderTxt {
+            top: 6%; } }
         .advantages .content1 .slider .slide .sliderTxt .txtTop {
           font-size: 14px; }
           @media screen and (min-width: 1025px) and (max-width: 1280px) {
@@ -436,6 +498,9 @@ header {
           @media screen and (min-width: 641px) and (max-width: 1024px) {
             .advantages .content1 .slider .slide .sliderTxt .txtTop {
               font-size: 10px; } }
+          @media screen and (min-width: 300px) and (max-width: 640px) {
+            .advantages .content1 .slider .slide .sliderTxt .txtTop {
+              font-size: 8px; } }
         .advantages .content1 .slider .slide .sliderTxt h2 {
           font-size: 82px;
           padding: 0; }
@@ -504,6 +569,9 @@ header {
               height: 70%;
               width: 70%; } }
           @media screen and (min-width: 641px) and (max-width: 1024px) {
+            .advantages .content1 .arrows .arrow img {
+              display: none; } }
+          @media screen and (min-width: 300px) and (max-width: 640px) {
             .advantages .content1 .arrows .arrow img {
               display: none; } }
 
@@ -587,6 +655,9 @@ header {
   @media screen and (min-width: 641px) and (max-width: 1024px) {
     .price {
       text-align: center; } }
+  @media screen and (min-width: 300px) and (max-width: 640px) {
+    .price {
+      text-align: center; } }
   .price .content1 {
     max-width: 1390px; }
     @media screen and (min-width: 1550px) and (max-width: 1828px) {
@@ -617,6 +688,9 @@ header {
       @media screen and (min-width: 641px) and (max-width: 1024px) {
         .price .content1 h2 {
           font-size: 36px; } }
+      @media screen and (min-width: 300px) and (max-width: 640px) {
+        .price .content1 h2 {
+          font-size: 55px; } }
     .price .content1 .cont {
       display: -webkit-box;
       display: flex;
@@ -645,6 +719,9 @@ header {
         @media screen and (min-width: 641px) and (max-width: 1024px) {
           .price .content1 .cont img {
             display: none; } }
+        @media screen and (min-width: 300px) and (max-width: 640px) {
+          .price .content1 .cont img {
+            display: none; } }
 
 .form_block1 {
   display: -webkit-box;
@@ -669,6 +746,10 @@ header {
     .form_block1 {
       width: 90%;
       margin: auto; } }
+  @media screen and (min-width: 300px) and (max-width: 640px) {
+    .form_block1 {
+      width: 90%;
+      margin: auto; } }
   .form_block1 fieldset {
     border: 1.33634px solid #BEBEBE;
     height: 81.52px;
@@ -689,6 +770,11 @@ header {
         height: 55px;
         width: auto;
         margin: 0 0 20px 0; } }
+    @media screen and (min-width: 300px) and (max-width: 640px) {
+      .form_block1 fieldset {
+        height: 55px;
+        width: auto;
+        margin: 0 0 20px 0; } }
     .form_block1 fieldset legend {
       color: black;
       font-size: 14.6997px;
@@ -700,7 +786,12 @@ header {
           font-size: 12px; } }
       @media screen and (min-width: 641px) and (max-width: 1024px) {
         .form_block1 fieldset legend {
-          font-size: 10px; } }
+          font-size: 10px;
+          margin-left: 24px; } }
+      @media screen and (min-width: 300px) and (max-width: 640px) {
+        .form_block1 fieldset legend {
+          font-size: 10px;
+          margin-left: 24px; } }
     .form_block1 fieldset .styleInput {
       border: none;
       width: 90%;
@@ -721,7 +812,10 @@ header {
           font-size: 16px; } }
       @media screen and (min-width: 641px) and (max-width: 1024px) {
         .form_block1 fieldset .styleInput {
-          font-size: 16px; } }
+          font-size: 17px; } }
+      @media screen and (min-width: 300px) and (max-width: 640px) {
+        .form_block1 fieldset .styleInput {
+          font-size: 17px; } }
   .form_block1 button {
     margin: 40px 0 0 0;
     width: 60%; }
@@ -735,6 +829,10 @@ header {
       .form_block1 button {
         margin: 10px 0 0 0; } }
     @media screen and (min-width: 641px) and (max-width: 1024px) {
+      .form_block1 button {
+        width: 100%;
+        margin: 10px 0 0 0; } }
+    @media screen and (min-width: 300px) and (max-width: 640px) {
       .form_block1 button {
         width: 100%;
         margin: 10px 0 0 0; } }

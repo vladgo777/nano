@@ -58,8 +58,7 @@ strong
 	@include tablet
 		max-width: 700px
 	@include mobile
-		padding: 0 20px
-		box-sizing: border-box
+		max-width: 700px
 
 .order
 	background-color: #2857B4
@@ -80,9 +79,13 @@ strong
 		width: 200px
 		height: 45px
 	@include tablet
-		font-size: 16px
+		font-size: 20px
 		width: 180px
 		height: 40px
+	@include mobile
+		font-size: 20px
+		width: 180px
+		height: 40px	
 
 .preloader
   	position: fixed
@@ -175,6 +178,9 @@ header
 		@include tablet
 			width: 100%
 			max-width: 1200px		
+		@include mobile
+			width: 100%
+			max-width: 1200px		
 		.imgIntro	
 			width: 90% 	
 			max-width: 1704px
@@ -191,10 +197,14 @@ header
 			@include sm-desk
 				width: 100% 
 			@include tablet
-				width: 100% 		
+				width: 100% 
+			@include mobile
+				width: 100%			
 			img
 				padding-top: $padding-top
 				width: 20%
+				@include mobile
+					width: 60%
 			h1
 				font-size: 81.7955px
 				line-height: 98px
@@ -206,6 +216,9 @@ header
 					font-size: 50px	
 				@include tablet	
 					font-size: 40px	
+				@include mobile
+					font-size: 55px
+					line-height: 66px
 			h2
 				font-size: 36.7083px
 				font-weight: 100
@@ -218,6 +231,8 @@ header
 					font-size: 22px
 				@include tablet	
 					font-size: 20px	
+				@include mobile
+					font-size: 16px	
 		
 		.txtIntro
 			padding: 100px 0 0 0
@@ -231,6 +246,9 @@ header
 			@include tablet
 				width: 90%
 				margin: auto	
+			@include mobile
+				width: 90%	
+				margin: auto	
 			h2
 				font-size: 30px
 				color: #000000
@@ -238,6 +256,8 @@ header
 					font-size: 27px
 				@include tablet
 					font-size: 25px	
+				@include mobile
+					font-size: 25px
 			p
 				font-size: 18px
 				color: #282828
@@ -246,10 +266,16 @@ header
 					font-size: 15px
 				@include tablet
 					font-size: 16px	
+				@include mobile
+					font-size: 15px
+					line-height: 18px	
 			span
 				font-size: 12px
 				color: #828282		
 				padding: 17px 0 0 0
+				@include mobile
+					font-size: 10px
+					line-height: 12px
 
 .steps
 	display: flex
@@ -267,6 +293,8 @@ header
 				font-size: 27px
 			@include tablet
 				font-size: 25px	
+			@include mobile
+				font-size: 20px	
 		.steps_block
 			display: flex
 			justify-content: center
@@ -280,6 +308,9 @@ header
 			@include tablet
 				width: 95%
 				margin: 55px auto	
+			@include mobile
+				width: 95%
+				margin: 55px auto		
 			img
 				width: 900px
 			.step-el
@@ -289,6 +320,8 @@ header
 				align-items: center
 				@include tablet
 					width: 50%
+				@include mobile
+					width: 90%	
 				p
 					margin-top: 20px
 					font-size: 18px
@@ -297,20 +330,29 @@ header
 						font-size: 15px
 					@include tablet
 						font-size: 16px	
+					@include mobile
+						font-size: 14px
+						line-height: 17px
 				img
 					width: 18%
 					@include tablet 
 						width: 25%
+					@include mobile
+						width: 30%		
 			.step-el1
 				width: 33%
 				@include tablet
 					width: 50%
+				@include mobile
+					width: 90%	
 				&:nth-child(4), &:nth-child(5), &:nth-child(6)
 					padding: $padding-top 0 0 0 
 					@include sm-desk
 						padding: 50px 0 0 0 
 					@include tablet
 						padding: 40px 0 0 0	
+					@include mobile
+						padding: 30px 0 0 0	
 
 .advantages
 	padding: $padding-top 0 0 0	
@@ -345,12 +387,16 @@ header
 						top: 10%	
 					@include tablet
 						top: 8%		
+					@include mobile
+						top: 6%	
 					.txtTop
 						font-size: 14px
 						@include sm-desk
 							font-size: 12px	
 						@include tablet
 							font-size: 10px	
+						@include mobile 
+							font-size: 8px	
 					h2
 						font-size: 82px	
 						padding: 0
@@ -406,6 +452,8 @@ header
 						height: 70%
 						width: 70%		
 					@include tablet
+						display: none	
+					@include mobile
 						display: none	
 .form_block
 	align-items: center
@@ -467,6 +515,8 @@ header
 	width: 100%
 	@include tablet
 		text-align: center
+	@include mobile
+		text-align: center	
 	.content1
 		max-width: 1390px
 		@include l-desk
@@ -489,6 +539,8 @@ header
 				font-size: 38px		
 			@include tablet
 				font-size: 36px
+			@include mobile
+				font-size: 55px	
 		.cont
 			display: flex
 			flex-direction: row
@@ -508,6 +560,8 @@ header
 					max-width: 450px
 					height: 90%	
 				@include tablet
+					display: none	
+				@include mobile
 					display: none		
 .form_block1
 	display: flex
@@ -522,6 +576,9 @@ header
 	@include sm-desk
 		max-width: 550px
 	@include tablet
+		width: 90%
+		margin: auto	
+	@include mobile
 		width: 90%
 		margin: auto		
 	fieldset
@@ -539,7 +596,11 @@ header
 		@include tablet
 			height: 55px
 			width: auto
-			margin: 0 0 20px 0	
+			margin: 0 0 20px 0
+		@include mobile
+			height: 55px
+			width: auto
+			margin: 0 0 20px 0		
 		legend
 			color: black
 			font-size: 14.6997px
@@ -550,6 +611,10 @@ header
 				font-size: 12px
 			@include tablet
 				font-size: 10px	
+				margin-left: 24px
+			@include mobile
+				font-size: 10px	
+				margin-left: 24px
 		.styleInput
 			border: none					
 			width: 90%
@@ -566,7 +631,9 @@ header
 			@include sm-desk
 				font-size: 16px
 			@include tablet
-				font-size: 16px	
+				font-size: 17px	
+			@include mobile
+				font-size: 17px		
 	button
 		margin: 40px 0 0 0
 		width: 60%
@@ -577,6 +644,9 @@ header
 		@include sm-desk
 			margin: 10px 0 0 0
 		@include tablet
+			width: 100%	
+			margin: 10px 0 0 0	
+		@include mobile
 			width: 100%	
 			margin: 10px 0 0 0	
 .contacts
