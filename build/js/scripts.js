@@ -2,8 +2,7 @@ $(document).ready(function(){
 //burger
   $('.burger').click(function(){
     $(this).toggleClass('open');
-    $('.header').toggleClass('headerActive');
-    // $('header').toggleClass('open');
+    $('header').fadeToggle(400);
     });
 //slider slick
   $('.slider').slick({
@@ -23,6 +22,10 @@ $(document).ready(function(){
                 scrollTop: target.offset().top
             }, 1000);
         }
+        var widthWindow = $(window).width();
+        if (widthWindow <= 1024){
+          $('header').fadeToggle(400);
+        } 
     });
 
 //order popup
